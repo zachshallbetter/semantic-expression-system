@@ -1,0 +1,38 @@
+name: CI & Conformance Validation
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate-conformance:
+    name: Run SES Conformance Suite
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run Conformance & Validation Tools
+        run: |
+          for f in tools/*.py; do
+            echo "=== Running $f ==="
+            python3 "$f" || exit 1
+          done
+
+      - name: Verify Context Corpus Exporter
+        run: |
+          python3 scripts/gen-llms.py
+          git diff --exit-code .agents/llms.txt || (echo "llms.txt is out of date. Run python3 scripts/gen-llms.py" && exit 1)

@@ -1,7 +1,11 @@
 # SES (Semantic Expression System)
 
-> **Version:** 1.0.0 Draft Standard  
-> **Status:** Protocol-Neutral Architecture Specification + Locally Qualified Implementation Candidate  
+[![License](https.img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE)
+[![Protocol](https://img.shields.io/badge/Protocol-IEPE--001_Conforming-green.svg)](./PROJECT_PROFILE.json)
+[![Specification](https://img.shields.io/badge/Specification-v1.0.0_Release-orange.svg)](./docs/SES-SPECIFICATION.md)
+
+> **Version:** 1.0.0 Release Standard  
+> **Status:** Protocol-Neutral Architecture Specification + Qualified Implementation Candidate  
 > **Target:** 2D Interface Architecture for Radical Visual Expression  
 
 ---
@@ -211,6 +215,46 @@ The full specification is modularly organized in the [`docs/`](./docs) directory
 | 💡 [**Full Code Example**](./docs/examples/home-example.ts) | End-to-end TypeScript example of semantic & expression models |
 | 📜 [**Changelog**](./docs/CHANGELOG.md) | Revision history and specification updates |
 
+---
+
+## 📂 Repository Structure
+
+```text
+Semantic-Expression-System/
+├── INTENT.md                   # Originating System Intent & Design Mission
+├── AGENTS.md                   # Master Agent & Contributor Operating Contract
+├── PROJECT_PROFILE.json        # IEPE Integration Profile & Authority Order
+├── LICENSE                     # Apache-2.0 Open Source License
+├── README.md                   # Top-level System Architecture & Index
+├── ROADMAP.md                  # Milestone & Release Roadmap
+├── docs/                       # Modular Specifications, Schemas, & Conformance Suite
+│   ├── SES-SPECIFICATION.md    # Complete Combined Specification Document
+│   ├── 01-definition.md ... 25 # Core Architecture Chapters (01–25)
+│   ├── schemas/                # Canonical TypeScript & JSON Interchange Schemas
+│   ├── conformance/            # Conformance Fixtures, Matrices, & Evaluation Plans
+│   └── examples/               # Worked Worked Examples & Reference Snippets
+├── tools/                      # Conformance Validation & Resolution Suite (20 tools)
+├── scripts/                    # Context Corpus Exporter (`gen-llms.py`)
+├── work/                       # Operational Work Graph (`GRAPH.md`) & Issues (SES-001..SES-040)
+├── evidence/                   # Empirical Verification Logs (`SES-xxx-evidence.json`)
+├── .agents/                    # Agent Package, Context Corpus (`llms.txt`), & Skills
+└── .github/workflows/          # CI Pipeline Automation (`ci.yml`)
+```
+
+### Key Subsystems & Roles
+
+| Path | Purpose & Contents |
+| :--- | :--- |
+| 📜 [**`INTENT.md`**](./INTENT.md) | Canonical statement of originating system intent and problem formulation |
+| 📜 [**`AGENTS.md`**](./AGENTS.md) | Operational and architectural contract for human and AI contributors |
+| 📋 [**`PROJECT_PROFILE.json`**](./PROJECT_PROFILE.json) | IEPE protocol metadata, evaluators, and protected action boundaries |
+| ⚖️ [**`LICENSE`**](./LICENSE) | Apache License 2.0 open-source license grant |
+| 📚 [**`docs/`**](./docs) | Formal specification chapters, TypeScript/JSON schemas, and conformance definitions |
+| 🛠 [**`tools/`**](./tools) | 20 deterministic validation tools covering recipe resolution, accessibility, security, and rendering |
+| ⚡️ [**`scripts/`**](./scripts) | Automation scripts including `gen-llms.py` context corpus generator |
+| 📊 [**`work/`**](./work) | Complete work graph tracking all 40 specification development issues |
+| 🧾 [**`evidence/`**](./evidence) | Audit ledger containing empirical verification results for all qualification claims |
+| 🤖 [**`.agents/`**](./.agents) | Agent package source, IEPE skills, and generated searchable corpus (`llms.txt`, `llms-full.txt`) |
 
 ---
 
