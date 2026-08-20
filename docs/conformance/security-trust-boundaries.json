@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "id": "SES-016",
+  "title": "SES Security and Trust Boundaries",
+  "status": "Canonical Contract",
+  "trustClasses": ["declarative-data","referenced-resource","constrained-custom-expression","executable-behavior","authority-bearing-input"],
+  "hostResponsibilities": ["sanitization","sandboxing","capability-policy","mime-validation","size-limits","origin-policy","logging-redaction"],
+  "failureCodes": ["ERR_UNTRUSTED_EXECUTABLE_EXPRESSION","ERR_CUSTOM_CAPABILITY_UNDECLARED","ERR_RESOURCE_POLICY_REJECTED","ERR_RESOURCE_METADATA_LIMIT","ERR_RESOURCE_ORIGIN_REJECTED","ERR_HOST_EXTENSION_UNAUTHORIZED","ERR_AUTHORITY_BEHAVIOR_IN_EXPRESSION","ERR_ASSET_DECODE_REJECTED"],
+  "executableExpressionCanonical": false,
+  "authorityInputCanonical": false
+}

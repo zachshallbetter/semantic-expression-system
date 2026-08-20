@@ -1,0 +1,11 @@
+{
+  "id": "SES-029-EV-001",
+  "issue": "SES-029",
+  "claim": "A DOM/CSS host adapter realizes stable SES identity and operation metadata without redefining canonical output.",
+  "source": ["tools/dom_css_renderer.py", "docs/conformance/dom-css-fixture.json", "docs/19-renderer-neutral-output.md"],
+  "method": ["local adapter execution", "HTML/CSS marker assertions"],
+  "result": "pass",
+  "observations": ["semantic and Visual Language data attributes are emitted", "operation identity is exposed", "focus-visible CSS is emitted", "HTML values are escaped"],
+  "limitations": ["No browser engine, visual comparison, or assistive technology evaluator is run"],
+  "authority": "coordinator.local"
+}

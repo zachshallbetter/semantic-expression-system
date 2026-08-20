@@ -1,0 +1,11 @@
+{
+  "id": "SES-011-EV-001",
+  "issue": "SES-011",
+  "claim": "SES defines deterministic Recipe precedence, field-specific merging, protected semantic fields, and hard conflict failures.",
+  "source": ["docs/17-recipe-precedence.md", "docs/conformance/recipe-precedence.json", "docs/11-resolver-boundary.md", "docs/05-projection-contract.md"],
+  "method": ["cascade reconciliation", "field-merge policy review", "protected-authority review"],
+  "result": "partial",
+  "findings": {"precedenceLayers": 12, "mergeRuleClasses": 7, "protectedFieldsDefined": 9, "failureCodesDefined": 6},
+  "limitations": ["Recipe precedence is implemented as a pure cascade, but full resolver integration of the layer trace remains limited to the local implementation candidate."],
+  "authority": "coordinator.local"
+}

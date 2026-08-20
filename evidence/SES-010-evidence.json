@@ -1,0 +1,11 @@
+{
+  "id": "SES-010-EV-001",
+  "issue": "SES-010",
+  "claim": "SES defines deterministic token and Asset resolution with category-safe references and typed missing-resource failures.",
+  "source": ["docs/16-token-asset-resolution.md", "docs/conformance/token-asset-resolution.json", "docs/04-token-system.md", "docs/11-resolver-boundary.md"],
+  "method": ["token-layer reconciliation", "asset-category review", "failure-boundary review"],
+  "result": "partial",
+  "findings": {"tokenLayersDefined": 6, "assetCategoriesDefined": 10, "failureCodesDefined": 8, "externalResponsibilitiesDefined": 5},
+  "limitations": ["No token resolver, Asset provider, or host capability adapter is implemented."],
+  "authority": "coordinator.local"
+}

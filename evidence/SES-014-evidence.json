@@ -1,0 +1,11 @@
+{
+  "id": "SES-014-EV-001",
+  "issue": "SES-014",
+  "claim": "SES defines a renderer-neutral resolved-expression output boundary with semantic preservation, expression separation, provenance, accessibility, responsive metadata, and host extension rules.",
+  "source": ["docs/19-renderer-neutral-output.md", "docs/conformance/renderer-neutral-output.json", "docs/11-resolver-boundary.md", "docs/06-runtime-and-rendering.md", "docs/08-implementation-boundary.md"],
+  "method": ["resolver-to-renderer boundary review", "output section trace review", "host-neutrality review"],
+  "result": "partial",
+  "findings": {"outputSectionsDefined": 10, "invariantsDefined": 7, "failureCodesDefined": 7, "hostNeutral": true},
+  "limitations": ["No resolver, renderer, host adapter, or resource loader is implemented."],
+  "authority": "coordinator.local"
+}

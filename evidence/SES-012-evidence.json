@@ -1,0 +1,11 @@
+{
+  "id": "SES-012-EV-001",
+  "issue": "SES-012",
+  "claim": "SES prohibits language-specific semantic and business-logic branches while permitting governed expression variation.",
+  "source": ["docs/18-semantic-branch-prohibition.md", "docs/conformance/semantic-branch-prohibition.json", "docs/01-definition.md", "docs/08-implementation-boundary.md", "docs/13-projection-equivalence.md"],
+  "method": ["architecture-boundary review", "allowed/prohibited pattern review", "cross-language equivalence trace"],
+  "result": "partial",
+  "findings": {"checksDefined": 6, "failureCodesDefined": 5, "allowedExpressionSurfacesDefined": 8, "implementationRefactorPerformed": false},
+  "limitations": ["No implementation codebase or automated branch detector is in scope."],
+  "authority": "coordinator.local"
+}

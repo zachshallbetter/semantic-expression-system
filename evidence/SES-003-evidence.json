@@ -1,0 +1,18 @@
+{
+  "id": "SES-003-EV-001",
+  "issue": "SES-003",
+  "claim": "SES validator obligations beyond JSON Schema shape validation are defined and traceable to the SES-001 baseline.",
+  "source": ["docs/10-validator-contract.md", "docs/09-conformance-baseline.md", "docs/schemas/ses.schema.json", "docs/schemas/ses-schema.ts"],
+  "method": ["source comparison", "baseline-to-check trace review", "scope-boundary review"],
+  "result": "partial",
+  "findings": {
+    "checkFamilies": ["record-shape", "cross-record-identity", "slot-compatibility", "socket-admission", "composition", "projection", "resource-resolution", "operation-exposure", "accessibility-state", "responsive-reachability"],
+    "typedFailureCodesDefined": true,
+    "resultSerializationDeferredTo": "SES-006"
+  },
+  "limitations": [
+    "No validator implementation exists in scope.",
+    "No renderer or runtime accessibility evaluator exists in scope."
+  ],
+  "authority": "coordinator.local"
+}

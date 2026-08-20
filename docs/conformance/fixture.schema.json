@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ses/1.0.0/conformance-fixture.schema.json",
+  "title": "SES Conformance Fixture",
+  "type": "object",
+  "required": ["id", "kind", "baseline", "layer", "expected"],
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "kind": { "enum": ["positive", "negative"] },
+    "baseline": { "type": "string", "minLength": 1 },
+    "layer": { "enum": ["S", "C", "R", "A", "I", "V"] },
+    "source": { "type": "array", "items": { "type": "string" } },
+    "semantic": { "type": "object", "additionalProperties": false, "required": ["composition", "identities", "operations"], "properties": {
+      "composition": { "type": "string" },
+      "identities": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+      "operations": { "type": "array", "items": { "type": "string" } }
+    }},
+    "expression": { "type": "object", "additionalProperties": false, "properties": {
+      "visualLanguage": { "type": "string" },
+      "allowedMutations": { "type": "array", "items": { "type": "string" } }
+    }},
+    "scenario": { "type": "string" },
+    "vectors": { "type": "array", "items": { "type": "object", "required": ["id", "visualLanguage", "allowedMutations"], "properties": {
+      "id": { "type": "string" },
+      "visualLanguage": { "type": "string" },
+      "allowedMutations": { "type": "array", "items": { "type": "string" } }
+    }, "additionalProperties": false } },
+    "equivalenceChecks": { "type": "array", "items": { "type": "string" } },
+    "fixtures": { "type": "array", "items": { "type": "object", "required": ["id", "baseline", "layer", "scenario", "errorCode", "failureCondition"], "properties": {
+      "id": { "type": "string" },
+      "baseline": { "type": "string" },
+      "layer": { "enum": ["S", "C", "R", "A", "I", "V"] },
+      "scenario": { "type": "string" },
+      "errorCode": { "type": "string" },
+      "failureCondition": { "type": "string" }
+    }, "additionalProperties": false } },
+    "expected": { "type": "object", "additionalProperties": false, "required": ["result"], "properties": {
+      "result": { "enum": ["pass", "fail"] },
+      "errorCode": { "type": "string" },
+      "failureCondition": { "type": "string" }
+    }}
+  },
+  "allOf": [
+    { "if": { "properties": { "kind": { "const": "positive" } } }, "then": { "required": ["semantic", "expression"] } },
+    { "if": { "properties": { "kind": { "const": "negative" } }, "required": ["scenario"] }, "then": { "properties": { "expected": { "required": ["errorCode", "failureCondition"] } } } }
+  ],
+  "additionalProperties": false
+}

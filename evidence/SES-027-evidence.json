@@ -1,0 +1,11 @@
+{
+  "id": "SES-027-EV-001",
+  "issue": "SES-027",
+  "claim": "Projection mutations are accepted only when classified and permitted by the Projection Contract.",
+  "source": ["tools/projection_enforcement.py", "docs/conformance/projection-enforcement-fixtures.json", "docs/05-projection-contract.md"],
+  "method": ["local valid projection execution", "undeclared mutation execution", "preserved-value mutation execution"],
+  "result": "pass",
+  "observations": ["valid transform, omit, introduce, and preserve cases pass", "undeclared transform fails", "preserved semantic changes fail"],
+  "limitations": ["Host renderer behavior is outside this enforcement boundary"],
+  "authority": "coordinator.local"
+}

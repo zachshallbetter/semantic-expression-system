@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "id": "SES-029-dom-css-fixture",
+  "input": "SES-021 MediaCard/Neo-Edo resolved output",
+  "requiredHtmlMarkers": [
+    "data-ses-identity=\"media-card\"",
+    "data-ses-visual-language=\"neo-edo\"",
+    "data-ses-operation=\"open-media\"",
+    "data-ses-semantic-target=\"media-card\""
+  ],
+  "requiredCssMarkers": ["focus-visible", "outline", "box-sizing"],
+  "forbiddenCanonicalFields": ["dom", "css", "eventHandler"]
+}

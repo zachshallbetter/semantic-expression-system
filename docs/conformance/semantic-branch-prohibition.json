@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "id": "SES-012",
+  "title": "SES Semantic Branch Prohibition",
+  "status": "Canonical Contract",
+  "checks": ["BRANCH-001","BRANCH-002","BRANCH-003","BRANCH-004","BRANCH-005","BRANCH-006"],
+  "failureCodes": ["ERR_SEMANTIC_LANGUAGE_BRANCH","ERR_BUSINESS_LANGUAGE_BRANCH","ERR_DUPLICATE_SEMANTIC_TREE","ERR_OPERATION_LANGUAGE_BRANCH","ERR_UNNAMESPACED_HOST_EXTENSION"],
+  "allowedExpressionSurfaces": ["recipe","token","asset","morphology","appearance","responsive","state-signaling","renderer-neutral-host-extension"]
+}

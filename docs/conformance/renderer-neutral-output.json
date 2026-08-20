@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "id": "SES-014",
+  "title": "SES Renderer-Neutral Output Contract",
+  "status": "Canonical Contract",
+  "sections": ["identity","semantic","projection","expression","resources","interaction","accessibility","responsive","trace","diagnostics"],
+  "invariants": ["OUTPUT-001","OUTPUT-002","OUTPUT-003","OUTPUT-004","OUTPUT-005","OUTPUT-006","OUTPUT-007"],
+  "failureCodes": ["ERR_OUTPUT_IDENTITY_MISSING","ERR_OUTPUT_REQUIRED_METADATA_MISSING","ERR_OUTPUT_SEMANTIC_EXPRESSION_MIXED","ERR_OUTPUT_PROVENANCE_MISSING","ERR_OUTPUT_ACCESSIBILITY_METADATA_MISSING","ERR_OUTPUT_HOST_EXTENSION_COLLISION","ERR_OUTPUT_UNRESOLVED_RESOURCE"],
+  "hostNeutral": true,
+  "hostResponsibilities": ["realization", "resource-loading", "operation-invocation", "platform-accessibility-mapping"]
+}

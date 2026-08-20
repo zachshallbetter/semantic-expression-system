@@ -1,0 +1,9 @@
+{
+  "$schema": "https://iepe.dev/schema/protocol-reference.schema.json",
+  "conformanceCommand": "python3 tools/validate.py",
+  "protocolId": "IEPE-001",
+  "protocolVersion": "0.2.0",
+  "relationship": "reference",
+  "revision": "56f82de8cca122cc4d347cdd55bb32bdcd31ed27",
+  "source": "https://github.com/zachshallbetter/IEPE"
+}

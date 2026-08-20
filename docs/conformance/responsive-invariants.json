@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "id": "SES-008",
+  "title": "SES Responsive Invariants",
+  "status": "Canonical Contract",
+  "contexts": ["wide", "narrow", "small-touch", "reduced-motion", "high-contrast"],
+  "mutations": {
+    "reorder": "allowed-with-logical-order-preservation",
+    "collapse": "allowed-with-required-reachability",
+    "hide": "optional-or-explicitly-omittable-only",
+    "transform": "declared-expression-properties-only",
+    "overflow": "declared-and-usable-only",
+    "clip": "decorative-or-explicitly-optional-only"
+  },
+  "invariants": ["RESP-001","RESP-002","RESP-003","RESP-004","RESP-005","RESP-006","RESP-007","RESP-008"],
+  "failureCodes": ["ERR_CONTENT_UNREACHABLE","ERR_CONTENT_CLIPPED","ERR_COMPOSITION_OVERFLOW","ERR_KEYBOARD_ORDER_MISMATCH","ERR_OPERATION_NOT_EXPOSED","ERR_A11Y_FALLBACK_MISSING"]
+}

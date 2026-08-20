@@ -1,0 +1,10 @@
+{
+  "id": "SES-006-EV-001",
+  "issue": "SES-006",
+  "claim": "SES conformance outcomes have a machine-readable result envelope with traceable evidence and typed failures.",
+  "source": ["docs/conformance/result.schema.json", "docs/conformance/results/SES-002-structural.json", "docs/10-validator-contract.md"],
+  "method": ["JSON parsing", "schema-shape inspection", "result-to-validator-contract trace review"],
+  "result": "partial",
+  "limitations": ["JSON Schema execution is unavailable because the jsonschema package is not installed.", "The example intentionally remains inconclusive because no runtime validator exists."],
+  "authority": "coordinator.local"
+}

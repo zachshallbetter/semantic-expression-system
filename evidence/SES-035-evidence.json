@@ -1,0 +1,11 @@
+{
+  "id": "SES-035-EV-001",
+  "issue": "SES-035",
+  "claim": "Reduced-motion and high-contrast contexts produce explicit accessible expression handling without changing semantic identity.",
+  "source": ["tools/accessibility_modes.py", "docs/conformance/accessibility-mode-fixtures.json", "docs/15-accessibility-expression.md"],
+  "method": ["local accessibility-mode execution", "typed fallback failure checks"],
+  "result": "pass",
+  "observations": ["motion is disabled under reduced-motion", "declared motion fallback is retained", "high-contrast expression is required", "accessibility context flags are emitted"],
+  "limitations": ["No OS preference, browser media query, or assistive technology is exercised"],
+  "authority": "coordinator.local"
+}

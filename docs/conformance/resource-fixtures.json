@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "id": "SES-025-resource-fixtures",
+  "tokens": {
+    "primitive": {"color.vermilion": "#d1493f"},
+    "semantic": {"surface.washi": {"alias": "surface.card"}},
+    "role": {"surface.card": "#f4ead5"},
+    "recipe": {},
+    "explicit": {}
+  },
+  "assets": {
+    "textures": {"washi-fiber": {"category": "textures", "kind": "texture", "source": "fixture:washi-fiber"}},
+    "patterns": {"seigaiha": {"category": "patterns", "kind": "pattern", "source": "fixture:seigaiha"}},
+    "edges": {"dry-brush-edge": {"category": "edges", "kind": "edge", "source": "fixture:dry-brush-edge"}},
+    "ornaments": {"seal-small": {"category": "ornaments", "kind": "ornament", "source": "fixture:seal-small"}}
+  }
+}

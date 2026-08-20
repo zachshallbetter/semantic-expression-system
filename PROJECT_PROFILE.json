@@ -1,0 +1,57 @@
+{
+  "$schema": "https://iepe.dev/schema/project-profile.schema.json",
+  "authorityOrder": [
+    "INTENT.md",
+    "docs/EXPERIENCE.md",
+    "docs/ARCHITECTURE.md",
+    "PROJECT_PROFILE.json",
+    "AGENTS.md"
+  ],
+  "coordinator": {
+    "capacity": 1,
+    "identity": "coordinator.local",
+    "stopPolicyRef": "AGENTS.md#stop-conditions"
+  },
+  "evaluators": [
+    "documentation.conformance",
+    "schema.validation"
+  ],
+  "id": "ses",
+  "intentRefs": [
+    "INTENT.md"
+  ],
+  "memory": {
+    "institutional": "docs",
+    "negativeResults": "docs/NEGATIVE_RESULTS.md",
+    "operational": "work"
+  },
+  "name": "Semantic Expression System",
+  "profileStatus": "provisional",
+  "promotionAuthorities": [
+    "unassigned"
+  ],
+  "protectedActions": [
+    "external-publication",
+    "production-deployment",
+    "spending",
+    "destructive-migration",
+    "credential-or-iam-change",
+    "authoritative-intent-change",
+    "external-communication"
+  ],
+  "protocol": {
+    "protocolId": "IEPE-001",
+    "protocolVersion": "0.2.0",
+    "revision": "56f82de8cca122cc4d347cdd55bb32bdcd31ed27",
+    "source": "https://github.com/zachshallbetter/IEPE"
+  },
+  "workGraph": {
+    "projectRefs": [
+      "work"
+    ],
+    "provider": "local"
+  },
+  "workspaces": [
+    "."
+  ]
+}

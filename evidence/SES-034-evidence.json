@@ -1,0 +1,11 @@
+{
+  "id": "SES-034-EV-001",
+  "issue": "SES-034",
+  "claim": "Responsive contexts preserve required content and operations and use declared state transitions.",
+  "source": ["tools/responsive_validation.py", "docs/conformance/responsive-fixtures.json", "docs/14-responsive-invariants.md"],
+  "method": ["local valid responsive validation", "typed invalid-fixture validation"],
+  "result": "pass",
+  "observations": ["wide and narrow contexts pass", "overflow, hidden content, clipping, and invalid transition cases fail with typed codes"],
+  "limitations": ["No real browser viewport or layout engine is exercised"],
+  "authority": "coordinator.local"
+}

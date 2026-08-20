@@ -1,0 +1,29 @@
+{
+  "$schema": "https://iepe.dev/schema/candidate.schema.json",
+  "id": "SES-040-candidate-001",
+  "issue": "SES-040",
+  "name": "SES local implementation candidate 001",
+  "status": "qualified-local-candidate",
+  "authority": "coordinator.local",
+  "protocol": {"id": "IEPE-001", "version": "0.2.0", "revision": "56f82de8cca122cc4d347cdd55bb32bdcd31ed27"},
+  "scope": {
+    "implemented": ["pure resolver", "resolved-output fixture", "validator", "negative diagnostics", "resource resolution", "recipe cascade", "projection enforcement", "snapshots", "DOM/CSS adapter", "equivalence checks", "operation routing", "accessibility metadata", "keyboard/focus metadata", "responsive metadata", "accessibility modes", "security boundary", "local performance measurement", "framework-neutral adapter", "cross-language summary and mutation checks"],
+    "excluded": ["transport", "persistence", "synchronization", "authorization", "product navigation", "production deployment", "external publication"]
+  },
+  "evidence": {
+    "issueRecords": ["work/SES-021.md", "work/SES-022.md", "work/SES-023.md", "work/SES-024.md", "work/SES-025.md", "work/SES-026.md", "work/SES-027.md", "work/SES-028.md", "work/SES-029.md", "work/SES-030.md", "work/SES-031.md", "work/SES-032.md", "work/SES-033.md", "work/SES-034.md", "work/SES-035.md", "work/SES-036.md", "work/SES-037.md", "work/SES-038.md", "work/SES-039.md"],
+    "evidenceRecords": ["evidence/SES-021-evidence.json", "evidence/SES-022-evidence.json", "evidence/SES-023-evidence.json", "evidence/SES-024-evidence.json", "evidence/SES-025-evidence.json", "evidence/SES-026-evidence.json", "evidence/SES-027-evidence.json", "evidence/SES-028-evidence.json", "evidence/SES-029-evidence.json", "evidence/SES-030-evidence.json", "evidence/SES-031-evidence.json", "evidence/SES-032-evidence.json", "evidence/SES-033-evidence.json", "evidence/SES-034-evidence.json", "evidence/SES-035-evidence.json", "evidence/SES-036-evidence.json", "evidence/SES-037-evidence.json", "evidence/SES-038-evidence.json", "evidence/SES-039-evidence.json"]
+  },
+  "qualification": {
+    "maturity": "implemented-and-locally-tested",
+    "reproduction": "run the SES-021 through SES-039 local checks recorded in the issue evidence",
+    "evaluator": "documentation.conformance + schema.validation",
+    "recommendation": "accept as a local implementation candidate; do not promote to empirically-validated or release-ready"
+  },
+  "gaps": [
+    "No independent browser or assistive-technology evaluation",
+    "No production workload or cross-machine performance benchmark",
+    "No independent promotion authority assigned",
+    "No framework-specific production integration"
+  ]
+}

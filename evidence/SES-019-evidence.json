@@ -1,0 +1,11 @@
+{
+  "id": "SES-019-EV-001",
+  "issue": "SES-019",
+  "claim": "The four SES projection vectors have repeatable semantic and operation equivalence coverage.",
+  "source": ["tools/validate_projection_equivalence.py", "docs/conformance/projection-equivalence.json", "docs/13-projection-equivalence.md"],
+  "method": ["local executable regression check"],
+  "result": "pass",
+  "observations": ["4 unique vectors", "7 shared equivalence checks declared", "shared semantic identity set present", "shared operation set present"],
+  "limitations": ["No pixel, host-renderer, or automated accessibility comparison is performed."],
+  "authority": "coordinator.local"
+}

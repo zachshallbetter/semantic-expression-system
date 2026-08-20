@@ -1,0 +1,21 @@
+{
+  "id": "SES-023-EV-001",
+  "issue": "SES-023",
+  "claim": "The SES-022 resolved-output expectations are executable as a deterministic local validator.",
+  "source": [
+    "tools/validate_resolved_output.py",
+    "docs/conformance/resolved-output-fixtures.json"
+  ],
+  "method": ["local validator execution"],
+  "result": "pass",
+  "observations": [
+    "required sections are checked",
+    "expected paths and values are checked",
+    "forbidden host-specific fields are checked",
+    "failure output uses typed diagnostic codes"
+  ],
+  "limitations": [
+    "Semantic negative fixtures and full validator contract checks remain SES-024 and later work"
+  ],
+  "authority": "coordinator.local"
+}

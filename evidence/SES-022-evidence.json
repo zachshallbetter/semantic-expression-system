@@ -1,0 +1,21 @@
+{
+  "id": "SES-022-EV-001",
+  "issue": "SES-022",
+  "claim": "The first resolved SES output has a canonical, renderer-neutral expectation fixture.",
+  "source": [
+    "docs/conformance/resolved-output-fixtures.json",
+    "tools/resolve_reference_fixture.py",
+    "tools/ses_resolver.py"
+  ],
+  "method": ["fixture structure review", "reference-source cross-check"],
+  "result": "pass",
+  "observations": [
+    "10 renderer-neutral output sections are required",
+    "identity, operation, projection, expression, context, trace, and diagnostics are asserted",
+    "host-specific fields are explicitly excluded"
+  ],
+  "limitations": [
+    "The fixture is not yet executed by an independent validator; SES-023 owns that work"
+  ],
+  "authority": "coordinator.local"
+}

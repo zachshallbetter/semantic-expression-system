@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "id": "fixture-appearance-neo-edo",
+  "kind": "expression",
+  "visualLanguage": "neo-edo",
+  "target": "media-card",
+  "morphology": {"hierarchy":"editorial","density":"compact","rhythm":"asymmetric","enclosure":"soft","overlap":"subtle"},
+  "appearance": {
+    "background":[{"type":"color","token":"surface.washi"},{"type":"texture","asset":"washi-fiber","opacity":0.28}],
+    "patterns":[{"asset":"seigaiha","placement":"bottom","opacity":0.06}],
+    "edges":[{"sides":["top"],"style":"brush","asset":"dry-brush-edge"},{"sides":["left"],"style":"solid","token":"color.vermilion"}],
+    "decorations":[{"type":"seal","asset":"seal-small","anchor":"bottom-left"}]
+  },
+  "projection": {"preserve":["identity","operation-identity","accessibility-order"],"transform":["orientation","media-placement","enclosure","background","edges","texture","pattern","ornament"]},
+  "source":"../../examples/home-example.ts"
+}

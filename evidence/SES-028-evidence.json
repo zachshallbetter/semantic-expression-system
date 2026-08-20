@@ -1,0 +1,11 @@
+{
+  "id": "SES-028-EV-001",
+  "issue": "SES-028",
+  "claim": "Equivalent resolved-output values have stable canonical serialization and snapshots, while changed values are detected.",
+  "source": ["tools/deterministic_snapshot.py", "docs/conformance/snapshot-fixtures.json"],
+  "method": ["canonical serialization comparison", "digest comparison"],
+  "result": "pass",
+  "observations": ["key insertion order does not affect the digest", "expression change changes the digest", "algorithm and encoding are recorded"],
+  "limitations": ["No cross-language serializer equivalence is established yet"],
+  "authority": "coordinator.local"
+}

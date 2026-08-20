@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "id": "SES-009",
+  "title": "SES Accessibility-Preserving Expression",
+  "status": "Canonical Contract",
+  "contexts": ["keyboard-only", "focus-visible", "reduced-motion", "high-contrast", "non-color-state", "narrow-responsive"],
+  "checks": ["A11Y-001","A11Y-002","A11Y-003","A11Y-004","A11Y-005","A11Y-006","A11Y-007","A11Y-008"],
+  "failureCodes": ["ERR_ACCESSIBLE_NAME_MISSING","ERR_ROLE_RELATIONSHIP_INVALID","ERR_KEYBOARD_ORDER_MISMATCH","ERR_OPERATION_NOT_EXPOSED","ERR_FOCUS_INDICATOR_OBSTRUCTED","ERR_STATE_SIGNALING_INSUFFICIENT","ERR_A11Y_FALLBACK_MISSING","ERR_REDUCED_MOTION_UNSUPPORTED","ERR_HIGH_CONTRAST_FALLBACK_MISSING"]
+}

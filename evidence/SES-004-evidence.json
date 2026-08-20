@@ -1,0 +1,17 @@
+{
+  "id": "SES-004-EV-001",
+  "issue": "SES-004",
+  "claim": "SES defines a pure, deterministic, renderer-neutral semantic-to-expression resolver boundary.",
+  "source": ["docs/11-resolver-boundary.md", "docs/06-runtime-and-rendering.md", "docs/08-implementation-boundary.md", "docs/10-validator-contract.md"],
+  "method": ["source reconciliation", "boundary ownership review", "invariant trace review"],
+  "result": "partial",
+  "findings": {
+    "pureContractDefined": true,
+    "cascadeDefined": true,
+    "protectedSemanticFieldsDefined": true,
+    "rendererNeutralOutputDefined": true,
+    "typedFailureBoundaryDefined": true
+  },
+  "limitations": ["Implementation and runtime behavior are intentionally out of scope.", "Final conflict precedence is deferred to SES-011."],
+  "authority": "coordinator.local"
+}

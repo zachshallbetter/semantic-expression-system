@@ -1,0 +1,11 @@
+{
+  "id": "SES-007-EV-001",
+  "issue": "SES-007",
+  "claim": "SES defines projection-equivalence vectors for one Home semantic fixture across four radically different Visual Languages.",
+  "source": ["docs/13-projection-equivalence.md", "docs/conformance/projection-equivalence.json", "docs/conformance/fixtures/positive-home.json"],
+  "method": ["vector-to-baseline trace review", "preserved-property review", "expression-difference review"],
+  "result": "partial",
+  "findings": {"vectorCount": 4, "sharedSemanticFixture": true, "equivalenceChecksDefined": 7, "languageSpecificSemanticBranchesProhibited": true},
+  "limitations": ["No renderer or regression runner exists in scope, so equivalence checks are specified but not executed."],
+  "authority": "coordinator.local"
+}

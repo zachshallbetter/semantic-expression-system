@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "id": "SES-013",
+  "title": "SES Reference Implementation Fixture Pack",
+  "status": "Canonical Fixture Pack",
+  "files": ["semantic-home.json","media-card.json","operations-and-states.json","appearance-neo-edo.json"],
+  "sharedIdentities": ["home","home.hero","home.trending","media-card"],
+  "sharedOperations": ["enter-world","open-media","view-all"],
+  "purpose": "Reusable semantic, operation, state, and expression fixtures for future validators and runtimes."
+}

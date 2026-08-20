@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "id": "SES-018",
+  "title": "SES Authoring Boundaries",
+  "status": "Canonical Contract",
+  "surfaces": ["element","slot","block","socket","composition","projection-contract","visual-language","theme","recipe","token-registry","asset-registry","resolver","host-renderer","external-protocol-application"],
+  "routingRules": ["stable-cross-language-property-to-semantic-or-projection","mutable-presentation-property-to-expression","data-movement-to-external-protocol","business-behavior-to-host-application","host-extension-to-namespaced-adapter","no-semantic-duplication"],
+  "conflictRule": "canonical-semantic-and-projection-authority-wins; unresolved-authority-is-recorded",
+  "scopeExclusions": ["codebase-reorganization","transport-schema","application-business-logic"]
+}

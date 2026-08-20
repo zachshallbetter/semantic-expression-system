@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "id": "SES-032-accessibility-fixtures",
+  "valid": {
+    "accessibleName": "Media card: Sunrise over the bay",
+    "role": "article",
+    "knownIds": ["media-card", "media-card-title", "media-card-media"],
+    "relationships": [{"type": "labelledby", "target": "media-card-title"}, {"type": "describedby", "target": "media-card-media"}],
+    "operations": [{"id": "open-media", "accessibleName": "Open Sunrise over the bay"}]
+  },
+  "invalid": [
+    {"record": {"role": "article", "knownIds": []}, "expectedCode": "ERR_ACCESSIBLE_NAME_MISSING"},
+    {"record": {"accessibleName": "Card", "role": "unknown", "knownIds": []}, "expectedCode": "ERR_ACCESSIBLE_ROLE_INVALID"},
+    {"record": {"accessibleName": "Card", "role": "article", "knownIds": [], "relationships": [{"type": "labelledby", "target": "missing"}]}, "expectedCode": "ERR_ACCESSIBLE_RELATIONSHIP_BROKEN"},
+    {"record": {"accessibleName": "Card", "role": "article", "knownIds": [], "operations": [{"id": "open-media"}]}, "expectedCode": "ERR_OPERATION_ACCESSIBLE_NAME_MISSING"}
+  ]
+}

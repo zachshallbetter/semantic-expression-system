@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "id": "SES-028-snapshot-fixtures",
+  "value": {
+    "identity": {"target": "media-card", "composition": "media-card"},
+    "semantic": {"operations": ["open-media"], "invariance": {"visual": "free", "semantic": "required"}},
+    "expression": {"visualLanguage": "neo-edo", "morphology": {"rhythm": "asymmetric"}}
+  },
+  "equivalentValue": {
+    "expression": {"morphology": {"rhythm": "asymmetric"}, "visualLanguage": "neo-edo"},
+    "semantic": {"invariance": {"semantic": "required", "visual": "free"}, "operations": ["open-media"]},
+    "identity": {"composition": "media-card", "target": "media-card"}
+  },
+  "changedValue": {
+    "identity": {"target": "media-card", "composition": "media-card"},
+    "semantic": {"operations": ["open-media"], "invariance": {"visual": "free", "semantic": "required"}},
+    "expression": {"visualLanguage": "neo-edo", "morphology": {"rhythm": "regular"}}
+  }
+}

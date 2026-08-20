@@ -1,0 +1,11 @@
+{
+  "id": "SES-033-EV-001",
+  "issue": "SES-033",
+  "claim": "Keyboard order and focus obligations are validated independently of host rendering.",
+  "source": ["tools/keyboard_focus_validation.py", "docs/conformance/keyboard-focus-fixtures.json", "docs/15-accessibility-expression.md"],
+  "method": ["local valid keyboard/focus validation", "typed invalid-fixture validation"],
+  "result": "pass",
+  "observations": ["semantic and keyboard order match", "focus visibility is required", "unreachable controls fail"],
+  "limitations": ["No browser keyboard automation or assistive technology execution is performed"],
+  "authority": "coordinator.local"
+}

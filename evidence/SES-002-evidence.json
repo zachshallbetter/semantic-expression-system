@@ -1,0 +1,34 @@
+{
+  "id": "SES-002-EV-001",
+  "issue": "SES-002",
+  "claim": "The SES-001 fixture plan has been formalized into machine-readable positive and negative fixture packages.",
+  "source": [
+    "docs/conformance/fixture.schema.json",
+    "docs/conformance/fixture-index.schema.json",
+    "docs/conformance/fixtures/index.json",
+    "docs/conformance/fixtures/positive-home.json",
+    "docs/conformance/fixtures/negative.json"
+  ],
+  "method": [
+    "python JSON parsing for all fixture and schema files",
+    "fixture count assertions",
+    "stable positive-vector ID assertion"
+  ],
+  "result": "partial",
+  "findings": {
+    "positiveFixtureCount": 4,
+    "negativeFixtureCount": 12,
+    "positiveVectors": [
+      "valid-home-core",
+      "valid-home-neo-edo",
+      "valid-home-western-comics",
+      "valid-home-cybernetic-minimalism"
+    ],
+    "negativeFixturesCarryExpectedFailure": true
+  },
+  "limitations": [
+    "The jsonschema Python package is unavailable in the current environment, so schema execution was not run.",
+    "No renderer or runtime validator exists in scope; negative fixtures encode expected failures but do not execute them."
+  ],
+  "authority": "coordinator.local"
+}

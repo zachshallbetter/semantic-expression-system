@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "id": "SES-037-performance-fixture",
+  "input": "reference-pack/media-card.json + appearance-neo-edo.json",
+  "sampleCount": 1000,
+  "measurements": ["resolver.p50", "resolver.p95", "rendererAdapter.p50", "rendererAdapter.p95"],
+  "provisionalBudget": {"resolverP95Milliseconds": 5.0},
+  "qualification": "local measurement, not production benchmark"
+}

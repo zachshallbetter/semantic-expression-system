@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "id": "SES-026-recipe-resolution-fixtures",
+  "layers": {
+    "Visual Language": {"morphology": {"rhythm": "regular", "density": "comfortable"}, "appearance": {"surface": "paper"}},
+    "Theme": {"appearance": {"surface": "washi"}},
+    "Block Recipe": {"morphology": {"rhythm": "asymmetric"}},
+    "accessibility overrides": {"appearance": {"focusVisibility": "high"}}
+  },
+  "expected": {
+    "morphology.rhythm": "asymmetric",
+    "morphology.density": "comfortable",
+    "appearance.surface": "washi",
+    "appearance.focusVisibility": "high"
+  },
+  "protectedOverride": {"layers": {"Block Recipe": {"operations": ["different-operation"]}}, "expectedCode": "ERR_PROTECTED_FIELD_OVERRIDE"}
+}

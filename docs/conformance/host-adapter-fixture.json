@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "id": "SES-038-host-adapter-fixture",
+  "applicationState": {
+    "semantic": {"block": "media-card", "operations": ["open-media"]},
+    "expression": {"target": "media-card", "visualLanguage": "core", "morphology": {"orientation": "vertical"}},
+    "context": {"viewport": "wide"}
+  },
+  "ownership": {
+    "transport": "host-application",
+    "persistence": "host-application",
+    "authorization": "host-application",
+    "navigation": "host-application",
+    "rendering": "host-renderer"
+  },
+  "expected": {"identity": {"composition": "media-card", "target": "media-card"}, "operationOwner": "host-application"}
+}

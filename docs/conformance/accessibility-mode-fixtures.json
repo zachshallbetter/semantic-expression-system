@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "id": "SES-035-accessibility-mode-fixtures",
+  "output": {
+    "identity": {"target": "media-card"},
+    "semantic": {"operations": ["open-media"]},
+    "expression": {
+      "motion": {"enabled": true, "duration": 200, "reducedMotion": {"mode": "none"}},
+      "highContrast": {"enabled": true, "surface": "solid", "edge": "strong"}
+    },
+    "accessibility": {"required": true}
+  },
+  "contexts": [
+    {"reducedMotion": true, "highContrast": true},
+    {"reducedMotion": false, "highContrast": false}
+  ],
+  "invalid": [
+    {"context": {"reducedMotion": true, "highContrast": false}, "output": {"expression": {"motion": {"enabled": true}}}, "expectedCode": "ERR_REDUCED_MOTION_FALLBACK_MISSING"},
+    {"context": {"reducedMotion": false, "highContrast": true}, "output": {"expression": {}}, "expectedCode": "ERR_HIGH_CONTRAST_FALLBACK_MISSING"}
+  ]
+}

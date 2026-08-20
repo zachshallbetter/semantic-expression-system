@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "id": "SES-015",
+  "title": "SES Change Governance",
+  "status": "Canonical Contract",
+  "versionBoundaries": ["semantic-model","expression-model","projection-contract","conformance","resolver","renderer-neutral-output","visual-language","theme","host-renderer","external-protocol"],
+  "changeClasses": ["documentation","additive","conformance-tightening","breaking-semantic","breaking-expression","deprecation"],
+  "requiredChangeRecord": ["changeId","boundary","intent","before","after","compatibility","impact","evidence","authority","disposition"],
+  "reviewInputs": ["SES-001","fixtures","result-schema","equivalence-vectors","responsive-contract","accessibility-contract","resolver-contract","output-contract","changelog"],
+  "inconclusiveWithoutEvidence": true
+}

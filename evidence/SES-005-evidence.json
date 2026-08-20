@@ -1,0 +1,11 @@
+{
+  "id": "SES-005-EV-001",
+  "issue": "SES-005",
+  "claim": "SES has a canonical vocabulary that distinguishes meaning, expression, projection, operation exposure, morphology, appearance, and conformance.",
+  "source": ["docs/12-canonical-vocabulary.md", "docs/01-definition.md", "docs/02-semantic-model.md", "docs/03-expression-model.md", "docs/05-projection-contract.md", "docs/07-conformance.md"],
+  "method": ["terminology reconciliation", "non-equivalence review", "cross-document usage review"],
+  "result": "partial",
+  "findings": {"canonicalTermsDefined": true, "usageRulesDefined": true, "existingIDsUnchanged": true},
+  "limitations": ["Existing historical prose may still contain non-normative aliases; no global editorial rewrite was performed."],
+  "authority": "coordinator.local"
+}

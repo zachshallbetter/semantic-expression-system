@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/ses/1.0.0/conformance-fixture-index.schema.json",
+  "title": "SES Conformance Fixture Index",
+  "type": "object",
+  "required": ["id", "sourceBaseline", "files", "counts"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "id": { "const": "SES-002" },
+    "title": { "type": "string" },
+    "version": { "type": "string" },
+    "sourceBaseline": { "type": "string" },
+    "expectations": { "type": "object", "additionalProperties": { "type": "string" } },
+    "files": { "type": "array", "items": { "type": "string" }, "minItems": 2 },
+    "counts": { "type": "object", "required": ["positive", "negative"], "properties": { "positive": { "const": 4 }, "negative": { "const": 12 } }, "additionalProperties": false }
+  },
+  "additionalProperties": false
+}

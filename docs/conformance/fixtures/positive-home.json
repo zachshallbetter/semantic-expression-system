@@ -1,0 +1,20 @@
+{
+  "$schema": "../fixture.schema.json",
+  "id": "SES-002-positive-home",
+  "kind": "positive",
+  "baseline": "VAR-01",
+  "layer": "V",
+  "source": ["../../09-conformance-baseline.md", "../ses-001-matrix.json", "../../examples/home-example.ts"],
+  "semantic": {
+    "composition": "home",
+    "identities": ["home", "home.hero", "home.trending", "hero", "media-rail", "media-grid", "ranked-collection"],
+    "operations": ["enter-world", "open-media", "view-all"]
+  },
+  "vectors": [
+    {"id":"valid-home-core","visualLanguage":"core","allowedMutations":["orientation","enclosure","spacing","alignment"]},
+    {"id":"valid-home-neo-edo","visualLanguage":"neo-edo","allowedMutations":["orientation","media-placement","enclosure","background","edges","texture","pattern","ornament"]},
+    {"id":"valid-home-western-comics","visualLanguage":"western-comics","allowedMutations":["orientation","card-topology","media-placement","enclosure","background","edges","texture","pattern","ornament"]},
+    {"id":"valid-home-cybernetic-minimalism","visualLanguage":"cybernetic-minimalism","allowedMutations":["orientation","card-topology","media-placement","enclosure","background","edges","texture","pattern","ornament"]}
+  ],
+  "expected": {"result":"pass"}
+}

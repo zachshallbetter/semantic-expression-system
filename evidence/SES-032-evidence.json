@@ -1,0 +1,11 @@
+{
+  "id": "SES-032-EV-001",
+  "issue": "SES-032",
+  "claim": "Accessible names, roles, relationships, and operation labels are validated as required SES output metadata.",
+  "source": ["tools/accessibility_validation.py", "docs/conformance/accessibility-fixtures.json", "docs/15-accessibility-expression.md"],
+  "method": ["local valid accessibility validation", "typed invalid-fixture validation"],
+  "result": "pass",
+  "observations": ["valid name and role pass", "relationship targets are checked", "four invalid accessibility cases produce typed failures"],
+  "limitations": ["No browser accessibility tree or assistive-technology run is performed"],
+  "authority": "coordinator.local"
+}

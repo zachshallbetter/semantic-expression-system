@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "id": "fixture-operations-and-states",
+  "kind": "interaction",
+  "operations": [
+    {"id":"enter-world","required":true,"exposure":true,"signaling":true},
+    {"id":"open-media","required":true,"exposure":true,"signaling":true},
+    {"id":"view-all","required":true,"exposure":true,"signaling":true}
+  ],
+  "states": [
+    {"id":"default","meaning":"ordinary available state","requiresAccessibleFallback":true},
+    {"id":"hover","meaning":"pointer or equivalent preview state","requiresAccessibleFallback":true},
+    {"id":"focus","meaning":"keyboard or programmatic focus state","requiresAccessibleFallback":true},
+    {"id":"selected","meaning":"current selection state","requiresAccessibleFallback":true},
+    {"id":"disabled","meaning":"operation unavailable state","requiresAccessibleFallback":true}
+  ],
+  "source":"../../examples/home-example.ts"
+}

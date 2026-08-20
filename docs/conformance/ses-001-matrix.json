@@ -1,0 +1,160 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "id": "SES-001",
+  "title": "SES-001 Conformance Invariant Matrix & Fixture Plan",
+  "status": "Canonical Baseline",
+  "version": "1.0.0-draft",
+  "governance": {
+    "principle": "Expression topology is free where the Projection Contract permits it, while semantic, behavioral, action, accessibility, and responsive invariants remain testable.",
+    "invarianceLevels": ["required", "bounded", "free"]
+  },
+  "layers": [
+    {
+      "id": "S",
+      "name": "Semantic Conformance",
+      "target": "Interface Identity",
+      "invariants": [
+        "stable-identities",
+        "slot-compatibility",
+        "socket-admission",
+        "cardinality-bounds",
+        "state-meaning"
+      ]
+    },
+    {
+      "id": "C",
+      "name": "Composition Conformance",
+      "target": "Hierarchy & Structure",
+      "invariants": [
+        "structural-hierarchy",
+        "content-priority",
+        "repetition-bounds",
+        "collapse-priority"
+      ]
+    },
+    {
+      "id": "R",
+      "name": "Recipe Conformance",
+      "target": "Symbol & Asset Resolution",
+      "invariants": [
+        "recipe-target-resolution",
+        "token-resolution",
+        "asset-path-validity",
+        "morphology-rule-validity"
+      ]
+    },
+    {
+      "id": "A",
+      "name": "Appearance Conformance",
+      "target": "Surface & Edge Composition",
+      "invariants": [
+        "background-composition-validity",
+        "texture-mask-pipeline",
+        "targeted-edge-rules",
+        "z-order-compositing"
+      ]
+    },
+    {
+      "id": "I",
+      "name": "Interaction Conformance",
+      "target": "Behavior & Accessibility",
+      "invariants": [
+        "operation-exposure",
+        "focus-ring-visibility",
+        "accessible-naming",
+        "logical-reading-order",
+        "disabled-state-handling"
+      ]
+    },
+    {
+      "id": "V",
+      "name": "Visual Validation",
+      "target": "Rendering Fidelity & Reflow",
+      "invariants": [
+        "responsive-content-reachability",
+        "no-viewport-overflow",
+        "cross-language-fidelity"
+      ]
+    }
+  ],
+  "referenceVectors": [
+    "Home + Core",
+    "Home + Neo-Edo",
+    "Home + Western Comics",
+    "Home + Cybernetic Minimalism"
+  ],
+  "negativeFixtures": [
+    {
+      "id": "FIX-NEG-01",
+      "layer": "S",
+      "scenario": "Missing required Slot (e.g. MediaCard missing title slot)",
+      "expectedErrorCode": "ERR_SLOT_REQUIRED_MISSING"
+    },
+    {
+      "id": "FIX-NEG-02",
+      "layer": "S",
+      "scenario": "Unknown or inadmissible Block inserted into Socket",
+      "expectedErrorCode": "ERR_SOCKET_ADMISSION_DENIED"
+    },
+    {
+      "id": "FIX-NEG-03",
+      "layer": "S",
+      "scenario": "Required operation hidden or unexposed by expression recipe",
+      "expectedErrorCode": "ERR_OPERATION_NOT_EXPOSED"
+    },
+    {
+      "id": "FIX-NEG-04",
+      "layer": "R",
+      "scenario": "Expression recipe references undefined token",
+      "expectedErrorCode": "ERR_TOKEN_UNRESOLVED"
+    },
+    {
+      "id": "FIX-NEG-05",
+      "layer": "R",
+      "scenario": "Recipe references missing asset URI",
+      "expectedErrorCode": "ERR_ASSET_NOT_FOUND"
+    },
+    {
+      "id": "FIX-NEG-06",
+      "layer": "A",
+      "scenario": "Edge rule assigned to non-existent target boundary",
+      "expectedErrorCode": "ERR_EDGE_TARGET_INVALID"
+    },
+    {
+      "id": "FIX-NEG-07",
+      "layer": "A",
+      "scenario": "Decorative background texture mask completely covers focus ring",
+      "expectedErrorCode": "ERR_FOCUS_INDICATOR_OBSTRUCTED"
+    },
+    {
+      "id": "FIX-NEG-08",
+      "layer": "A",
+      "scenario": "Background layer references non-existent image/pattern source",
+      "expectedErrorCode": "ERR_BACKGROUND_SOURCE_NULL"
+    },
+    {
+      "id": "FIX-NEG-09",
+      "layer": "C",
+      "scenario": "Mobile breakpoint forces horizontal layout overflow beyond viewport",
+      "expectedErrorCode": "ERR_COMPOSITION_OVERFLOW"
+    },
+    {
+      "id": "FIX-NEG-10",
+      "layer": "C",
+      "scenario": "Required semantic slot content clipped or unreachable",
+      "expectedErrorCode": "ERR_CONTENT_CLIPPED"
+    },
+    {
+      "id": "FIX-NEG-11",
+      "layer": "I",
+      "scenario": "Decorative visual ordering alters logical DOM keyboard focus order",
+      "expectedErrorCode": "ERR_KEYBOARD_ORDER_MISMATCH"
+    },
+    {
+      "id": "FIX-NEG-12",
+      "layer": "I",
+      "scenario": "State variant missing ARIA/accessibility fallback",
+      "expectedErrorCode": "ERR_A11Y_FALLBACK_MISSING"
+    }
+  ]
+}

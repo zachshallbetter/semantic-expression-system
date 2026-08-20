@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "id": "SES-033-keyboard-focus-fixtures",
+  "valid": {
+    "semanticOrder": ["media", "title", "open-media"],
+    "keyboardOrder": ["media", "title", "open-media"],
+    "focusVisible": true,
+    "controls": [{"id": "open-media", "keyboardReachable": true, "tabIndex": 0}]
+  },
+  "invalid": [
+    {"record": {"semanticOrder": ["title", "open-media"], "keyboardOrder": ["open-media", "title"], "focusVisible": true, "controls": []}, "expectedCode": "ERR_KEYBOARD_ORDER_MISMATCH"},
+    {"record": {"semanticOrder": [], "keyboardOrder": [], "focusVisible": false, "controls": []}, "expectedCode": "ERR_FOCUS_INDICATOR_OBSTRUCTED"},
+    {"record": {"semanticOrder": [], "keyboardOrder": [], "focusVisible": true, "controls": [{"id": "open-media", "keyboardReachable": false, "tabIndex": 0}]}, "expectedCode": "ERR_KEYBOARD_CONTROL_UNREACHABLE"}
+  ]
+}

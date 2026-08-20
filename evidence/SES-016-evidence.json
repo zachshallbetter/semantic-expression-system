@@ -1,0 +1,11 @@
+{
+  "id": "SES-016-EV-001",
+  "issue": "SES-016",
+  "claim": "SES expression inputs have explicit trust classes and cannot silently become executable behavior or authority-bearing commands.",
+  "source": ["docs/21-security-trust-boundaries.md", "docs/conformance/security-trust-boundaries.json", "docs/16-token-asset-resolution.md", "docs/08-implementation-boundary.md"],
+  "method": ["trust-boundary review", "expression-versus-authority review", "host-responsibility mapping"],
+  "result": "partial",
+  "findings": {"trustClassesDefined": 5, "hostResponsibilitiesDefined": 7, "failureCodesDefined": 8, "executableExpressionCanonical": false, "authorityInputCanonical": false},
+  "limitations": ["No host sanitizer, sandbox, security policy, or remote delivery adapter is implemented."],
+  "authority": "coordinator.local"
+}

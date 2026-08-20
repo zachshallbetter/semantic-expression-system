@@ -1,0 +1,11 @@
+{
+  "id": "SES-008-EV-001",
+  "issue": "SES-008",
+  "claim": "SES responsive expression rules preserve required content, operation exposure, accessibility, and reachability while allowing declared topology changes.",
+  "source": ["docs/14-responsive-invariants.md", "docs/conformance/responsive-invariants.json", "docs/10-validator-contract.md", "docs/schemas/ses-schema.ts"],
+  "method": ["responsive rule reconciliation", "context coverage review", "failure-code trace review"],
+  "result": "partial",
+  "findings": {"contextsDefined": 5, "invariantsDefined": 8, "allowedMutationClassesDefined": 6, "failureCodesReused": true},
+  "limitations": ["No responsive renderer or runtime evaluator exists in scope.", "Breakpoint values remain implementation-specific."],
+  "authority": "coordinator.local"
+}

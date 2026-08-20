@@ -1,0 +1,8 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "id": "SES-031-operation-routing-fixtures",
+  "requiredOperations": ["open-media"],
+  "exposure": {"open-media": {"exposed": true, "signaled": true, "enabled": true}},
+  "event": {"operationId": "open-media", "sourceIdentity": "media-card", "payload": {"mediaId": "fixture-media-1"}},
+  "expectedRoute": {"operationId": "open-media", "sourceIdentity": "media-card", "dispatch": "host-owned"}
+}

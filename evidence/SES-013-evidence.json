@@ -1,0 +1,11 @@
+{
+  "id": "SES-013-EV-001",
+  "issue": "SES-013",
+  "claim": "SES has a reusable reference fixture pack covering Home, MediaCard, operations, states, and layered appearance.",
+  "source": ["docs/conformance/reference-pack/index.json", "docs/conformance/reference-pack/semantic-home.json", "docs/conformance/reference-pack/media-card.json", "docs/conformance/reference-pack/operations-and-states.json", "docs/conformance/reference-pack/appearance-neo-edo.json", "docs/examples/home-example.ts"],
+  "method": ["fixture inventory review", "identity and operation cross-reference", "renderer-neutrality review"],
+  "result": "partial",
+  "findings": {"fixtureFiles": 5, "sharedSemanticIdentities": 4, "sharedOperations": 3, "stateFixtures": 5, "appearanceFixture": true},
+  "limitations": ["Fixtures are defined but not consumed by a runtime validator or renderer."],
+  "authority": "coordinator.local"
+}

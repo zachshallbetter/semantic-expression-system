@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "id": "SES-011",
+  "title": "SES Recipe Precedence and Conflict Handling",
+  "status": "Canonical Contract",
+  "precedence": ["visual-language","theme","user-style-options","composition","socket","block","variant","slot","element","state","responsive","accessibility"],
+  "mergeRules": {"scalar":"highest-permitted-replacement","alias":"replace-then-resolve","object":"recursive-declared-fields","ordered-array":"replace-unless-additive","slot-map":"merge-by-slot-id","state-map":"merge-by-state-id","protected":"never-merge"},
+  "protectedFields": ["semantic-identity","required-content","semantic-role","accessibility-relationship","operation-identity","business-behavior","invariance-profile","routing-intent","data-identity"],
+  "failureCodes": ["ERR_RECIPE_CONFLICT","ERR_PROTECTED_FIELD_OVERRIDE","ERR_TRANSFORM_UNDECLARED","ERR_RECIPE_TARGET_UNKNOWN","ERR_RECIPE_LAYER_INVALID","ERR_RECIPE_MERGE_INVALID"]
+}

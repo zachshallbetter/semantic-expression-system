@@ -1,0 +1,11 @@
+{
+  "id": "SES-030-EV-001",
+  "issue": "SES-030",
+  "claim": "Three distinct Visual Languages preserve MediaCard semantic and operation identity.",
+  "source": ["tools/verify_expression_equivalence.py", "docs/conformance/expression-equivalence-fixtures.json"],
+  "method": ["local multi-expression resolution", "shared identity and operation comparison"],
+  "result": "pass",
+  "observations": ["3 expressions resolved", "3 distinct Visual Languages retained one target identity", "open-media operation identity was shared"],
+  "limitations": ["No host rendering or accessibility execution is performed"],
+  "authority": "coordinator.local"
+}

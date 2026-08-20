@@ -1,0 +1,24 @@
+{
+  "id": "SES-021-EV-001",
+  "issue": "SES-021",
+  "claim": "A minimal pure resolver produces renderer-neutral output from the canonical Home semantic and Neo-Edo expression fixtures.",
+  "source": [
+    "tools/ses_resolver.py",
+    "tools/resolve_reference_fixture.py",
+    "docs/conformance/reference-pack/media-card.json",
+    "docs/conformance/reference-pack/appearance-neo-edo.json"
+  ],
+  "method": ["local executable reference resolution"],
+  "result": "pass",
+  "observations": [
+    "semantic composition identity is preserved",
+    "three operation identities are carried into interaction output",
+    "renderer-neutral output sections are emitted",
+    "target mismatch is represented as a typed resolution failure"
+  ],
+  "limitations": [
+    "token and asset registries are not resolved",
+    "full recipe precedence and host rendering are not implemented"
+  ],
+  "authority": "coordinator.local"
+}

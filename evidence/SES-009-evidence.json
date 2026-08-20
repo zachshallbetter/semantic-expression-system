@@ -1,0 +1,11 @@
+{
+  "id": "SES-009-EV-001",
+  "issue": "SES-009",
+  "claim": "SES defines accessibility-preserving expression obligations across semantic identity, operation access, focus, state signaling, responsive layout, reduced motion, and high contrast.",
+  "source": ["docs/15-accessibility-expression.md", "docs/conformance/accessibility-expression.json", "docs/02-semantic-model.md", "docs/05-projection-contract.md", "docs/10-validator-contract.md"],
+  "method": ["accessibility contract reconciliation", "expression-freedom boundary review", "context and failure-code coverage review"],
+  "result": "partial",
+  "findings": {"contextsDefined": 6, "checksDefined": 8, "failureCodesDefined": 9, "missingEvaluationIsInconclusive": true},
+  "limitations": ["No host renderer or automated accessibility evaluator exists in scope."],
+  "authority": "coordinator.local"
+}

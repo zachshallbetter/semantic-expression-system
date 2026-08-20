@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "id": "SES-034-responsive-fixtures",
+  "requiredContent": ["title", "media"],
+  "requiredOperations": ["open-media"],
+  "states": ["default", "focus", "selected", "disabled"],
+  "stateTransitions": {"default": ["focus", "selected"], "focus": ["default", "selected"], "selected": ["default"], "disabled": ["default"]},
+  "valid": {
+    "requiredContent": ["title", "media"],
+    "requiredOperations": ["open-media"],
+    "contexts": [
+      {"id": "wide", "reachableOperations": ["open-media"], "hiddenContent": [], "clippedContent": [], "overflow": false},
+      {"id": "narrow", "reachableOperations": ["open-media"], "hiddenContent": [], "clippedContent": [], "overflow": false}
+    ],
+    "states": ["default", "focus", "selected", "disabled"],
+    "stateTransitions": {"default": ["focus", "selected"], "focus": ["default"]}
+  },
+  "invalid": [
+    {"record": {"requiredContent": ["title"], "requiredOperations": ["open-media"], "contexts": [{"id": "narrow", "reachableOperations": [], "hiddenContent": [], "clippedContent": [], "overflow": true}]}, "expectedCode": "ERR_COMPOSITION_OVERFLOW"},
+    {"record": {"requiredContent": ["title"], "requiredOperations": [], "contexts": [{"id": "narrow", "reachableOperations": [], "hiddenContent": ["title"], "clippedContent": [], "overflow": false}]}, "expectedCode": "ERR_CONTENT_UNREACHABLE"},
+    {"record": {"requiredContent": ["title"], "requiredOperations": [], "contexts": [{"id": "narrow", "reachableOperations": [], "hiddenContent": [], "clippedContent": ["title"], "overflow": false}]}, "expectedCode": "ERR_CONTENT_CLIPPED"},
+    {"record": {"requiredContent": [], "requiredOperations": [], "contexts": [{"id": "wide", "reachableOperations": [], "hiddenContent": [], "clippedContent": [], "overflow": false}], "states": ["default"], "stateTransitions": {"default": ["missing"]}}, "expectedCode": "ERR_STATE_TRANSITION_INVALID"}
+  ]
+}

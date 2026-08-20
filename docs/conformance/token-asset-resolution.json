@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "id": "SES-010",
+  "title": "SES Token and Asset Resolution",
+  "status": "Canonical Contract",
+  "tokenLayers": ["primitive", "semantic", "role", "recipe", "explicit-expression-override", "resolved"],
+  "assetCategories": ["fonts", "icons", "images", "textures", "patterns", "masks", "edges", "backgrounds", "ornaments", "custom"],
+  "failureCodes": ["ERR_TOKEN_UNRESOLVED","ERR_TOKEN_CYCLE","ERR_TOKEN_AMBIGUOUS","ERR_PROTECTED_TOKEN_OVERRIDE","ERR_ASSET_NOT_FOUND","ERR_ASSET_CATEGORY_MISMATCH","ERR_ASSET_METADATA_INVALID","ERR_ASSET_CAPABILITY_UNSUPPORTED"],
+  "externalResponsibilities": ["retrieval", "decoding", "licensing", "caching", "host-capability-check"]
+}

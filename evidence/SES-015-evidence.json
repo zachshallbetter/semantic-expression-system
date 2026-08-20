@@ -1,0 +1,11 @@
+{
+  "id": "SES-015-EV-001",
+  "issue": "SES-015",
+  "claim": "SES defines version boundaries, change classes, conformance-impact review, deprecation, and changelog obligations.",
+  "source": ["docs/20-change-governance.md", "docs/conformance/change-governance.json", "docs/CHANGELOG.md", "docs/09-conformance-baseline.md"],
+  "method": ["governance reconciliation", "version-boundary review", "conformance-impact review mapping"],
+  "result": "partial",
+  "findings": {"versionBoundariesDefined": 10, "changeClassesDefined": 6, "requiredChangeFieldsDefined": 10, "reviewInputsDefined": 9, "missingEvidenceIsInconclusive": true},
+  "limitations": ["No external release authority or publication workflow is assigned."],
+  "authority": "coordinator.local"
+}

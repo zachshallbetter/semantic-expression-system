@@ -1,0 +1,11 @@
+{
+  "id": "SES-025-EV-001",
+  "issue": "SES-025",
+  "claim": "SES resolves caller-supplied tokens and assets with deterministic provenance and typed failures without loading resources.",
+  "source": ["tools/resource_resolution.py", "tools/ses_resolver.py", "docs/conformance/resource-fixtures.json"],
+  "method": ["local resolver execution", "cycle and category-mismatch checks"],
+  "result": "pass",
+  "observations": ["token alias provenance is retained", "asset categories are enforced", "missing and cyclic references fail with typed codes"],
+  "limitations": ["No asset retrieval, decoding, licensing, or host capability check is performed"],
+  "authority": "coordinator.local"
+}

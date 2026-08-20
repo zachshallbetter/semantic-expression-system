@@ -1,0 +1,23 @@
+{
+  "$schema": "../fixture.schema.json",
+  "id": "SES-002-negative-fixtures",
+  "kind": "negative",
+  "baseline": "SES-001",
+  "layer": "S",
+  "source": ["../../09-conformance-baseline.md", "../ses-001-matrix.json"],
+  "expected": {"result":"fail","errorCode":"fixture-records-use-case-expectations","failureCondition":"Each record below supplies its own baseline layer, error code, and failure condition."},
+  "fixtures": [
+    {"id":"invalid-missing-required-slot","baseline":"SEM-02","layer":"S","scenario":"MediaCard omits required title Slot","errorCode":"ERR_SLOT_REQUIRED_MISSING","failureCondition":"required Slot omitted"},
+    {"id":"invalid-incompatible-slot-content","baseline":"SEM-02","layer":"S","scenario":"Slot receives content outside its accepted types","errorCode":"ERR_SLOT_CONTENT_INCOMPATIBLE","failureCondition":"Slot content type rejected"},
+    {"id":"invalid-unknown-socket-block","baseline":"SEM-03","layer":"S","scenario":"Socket admits an unlisted Block","errorCode":"ERR_SOCKET_ADMISSION_DENIED","failureCondition":"incompatible Block admitted"},
+    {"id":"invalid-required-operation-hidden","baseline":"ACT-02","layer":"I","scenario":"Required operation exists but is not exposed","errorCode":"ERR_OPERATION_NOT_EXPOSED","failureCondition":"required operation unexposed"},
+    {"id":"invalid-unknown-token","baseline":"RES-02","layer":"R","scenario":"Recipe references an undefined token","errorCode":"ERR_TOKEN_UNRESOLVED","failureCondition":"unresolved token reference"},
+    {"id":"invalid-unknown-asset","baseline":"RES-02","layer":"R","scenario":"Recipe references an absent asset","errorCode":"ERR_ASSET_NOT_FOUND","failureCondition":"unresolved asset reference"},
+    {"id":"invalid-unknown-recipe-target","baseline":"RES-01","layer":"R","scenario":"Recipe targets an unknown semantic identity","errorCode":"ERR_RECIPE_TARGET_UNKNOWN","failureCondition":"recipe target does not resolve"},
+    {"id":"invalid-focus-obscured","baseline":"ACC-02","layer":"I","scenario":"Appearance layer obscures focus indication","errorCode":"ERR_FOCUS_INDICATOR_OBSTRUCTED","failureCondition":"focus indicator obscured"},
+    {"id":"invalid-semantic-order","baseline":"ACC-01","layer":"I","scenario":"Decorative order changes logical reading or keyboard order","errorCode":"ERR_KEYBOARD_ORDER_MISMATCH","failureCondition":"semantic order invalidated"},
+    {"id":"invalid-required-content-clipped","baseline":"RSP-01","layer":"V","scenario":"Required content is clipped or unreachable","errorCode":"ERR_CONTENT_CLIPPED","failureCondition":"required content clipped or unreachable"},
+    {"id":"invalid-mobile-overflow","baseline":"RSP-01","layer":"V","scenario":"Responsive expression overflows the viewport","errorCode":"ERR_COMPOSITION_OVERFLOW","failureCondition":"mobile horizontal overflow"},
+    {"id":"invalid-missing-state-fallback","baseline":"SEM-04","layer":"S","scenario":"State variant has no accessible fallback","errorCode":"ERR_A11Y_FALLBACK_MISSING","failureCondition":"state variant missing accessibility fallback"}
+  ]
+}

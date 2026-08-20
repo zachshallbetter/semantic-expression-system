@@ -1,0 +1,11 @@
+{
+  "id": "SES-017-EV-001",
+  "issue": "SES-017",
+  "claim": "SES defines provisional performance budgets and measurement boundaries for pure resolution and renderer-neutral handoff.",
+  "source": ["docs/22-performance-budgets.md", "docs/conformance/performance-budgets.json", "docs/11-resolver-boundary.md", "docs/19-renderer-neutral-output.md"],
+  "method": ["budget-surface review", "measurement-boundary review", "degradation and invariant review"],
+  "result": "partial",
+  "findings": {"budgetsDefined": 9, "measurementPercentilesDefined": 3, "pureResolverExclusionsDefined": 5, "budgetsProvisional": true},
+  "limitations": ["No implementation measurements exist; budgets are provisional guardrails, not performance claims."],
+  "authority": "coordinator.local"
+}

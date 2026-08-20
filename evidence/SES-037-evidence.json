@@ -1,0 +1,11 @@
+{
+  "id": "SES-037-EV-001",
+  "issue": "SES-037",
+  "claim": "The local resolver and DOM/CSS adapter have repeatable p50/p95 timing measurements with method and environment recorded.",
+  "source": ["tools/measure_pipeline.py", "docs/conformance/performance-fixture.json", "docs/22-performance-budgets.md"],
+  "method": ["1000-sample local timing run"],
+  "result": "pass",
+  "observations": ["resolver and renderer adapter are measured separately", "provisional resolver budget is evaluated", "environment and timing method are emitted"],
+  "limitations": ["Local warm process only; no production workload or cross-machine comparison"],
+  "authority": "coordinator.local"
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "id": "SES-027-projection-enforcement-fixtures",
+  "contract": {
+    "preserve": ["identity", "operation-identity", "accessibility-order"],
+    "transform": ["orientation", "media-placement", "background", "edges", "texture"],
+    "mayOmit": ["secondary-decoration"],
+    "mayIntroduce": ["ornament", "pattern"]
+  },
+  "validMutations": {
+    "orientation": "transform",
+    "media-placement": "transform",
+    "ornament": "introduce",
+    "secondary-decoration": "omit",
+    "identity": "preserve"
+  },
+  "invalidMutations": {
+    "business-behavior": "transform",
+    "required-title": "omit",
+    "new-operation": "introduce"
+  }
+}

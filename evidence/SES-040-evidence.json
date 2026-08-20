@@ -1,0 +1,11 @@
+{
+  "id": "SES-040-EV-001",
+  "issue": "SES-040",
+  "claim": "SES-040-candidate-001 is a traceable local implementation candidate with explicit maturity limits and evidence gaps.",
+  "source": ["docs/candidates/SES-040-candidate.json", "work/SES-021.md", "work/SES-039.md", "evidence/SES-021-evidence.json", "evidence/SES-039-evidence.json", "PROJECT_PROFILE.json"],
+  "method": ["IEPE evidence-bundle qualification", "issue/evidence linkage audit", "local reproduction checks"],
+  "result": "pass",
+  "observations": ["candidate binds SES-021 through SES-039", "maturity is limited to implemented-and-locally-tested", "excluded protected actions are explicit", "independent evaluator gaps are retained"],
+  "limitations": ["Candidate is not empirically validated or release-ready", "promotion authority remains unassigned"],
+  "authority": "coordinator.local"
+}

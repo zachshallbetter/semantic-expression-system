@@ -1,0 +1,11 @@
+{
+  "id": "SES-026-EV-001",
+  "issue": "SES-026",
+  "claim": "Recipe layers resolve in the declared fixed order with provenance and protected-field failures.",
+  "source": ["tools/recipe_resolution.py", "docs/conformance/recipe-resolution-fixtures.json", "docs/17-recipe-precedence.md"],
+  "method": ["local cascade execution", "protected override execution"],
+  "result": "pass",
+  "observations": ["later expression layers replace permitted scalar fields", "nested fields merge", "trace records layer and prior/result values", "protected operation override fails"],
+  "limitations": ["Projection permission checks are implemented in SES-027"],
+  "authority": "coordinator.local"
+}

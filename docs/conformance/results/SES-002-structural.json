@@ -1,0 +1,25 @@
+{
+  "$schema": "../result.schema.json",
+  "schemaVersion": "1.0.0-draft",
+  "runId": "SES-002-structural-001",
+  "baselineId": "SES-001",
+  "fixtureId": "SES-002-fixture-pack",
+  "layer": "S",
+  "checkId": "CHK-RECORD-SHAPE-001",
+  "result": "inconclusive",
+  "severity": "warning",
+  "summary": "Fixture files parse as JSON and satisfy count assertions; JSON Schema execution is pending.",
+  "evidence": {
+    "sources": [
+      "../fixture.schema.json",
+      "../fixture-index.schema.json",
+      "../fixtures/index.json",
+      "../fixtures/positive-home.json",
+      "../fixtures/negative.json"
+    ],
+    "method": ["JSON parsing", "fixture count assertions", "stable ID assertions"],
+    "observations": ["4 positive vectors", "12 negative fixtures"],
+    "limitations": ["jsonschema Python package unavailable", "runtime validator not implemented"]
+  },
+  "execution": {"order": 1, "validator": "manual.structural-check"}
+}

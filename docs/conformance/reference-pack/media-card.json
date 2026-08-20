@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "id": "fixture-media-card",
+  "kind": "block",
+  "block": "media-card",
+  "semanticRole": "media-content-summary",
+  "slots": [
+    {"id":"media","role":"media","cardinality":"one","accepts":["image"]},
+    {"id":"badge","role":"annotation","cardinality":"optional","accepts":["badge"]},
+    {"id":"title","role":"title","cardinality":"one","accepts":["heading","label"]},
+    {"id":"subtitle","role":"subtitle","cardinality":"optional","accepts":["text","label"]},
+    {"id":"meta","role":"meta","cardinality":"optional","accepts":["any"]},
+    {"id":"action","role":"action","cardinality":"optional","accepts":["button","icon-button"]}
+  ],
+  "states":["default","hover","focus","selected","disabled"],
+  "operations":["open-media"],
+  "behavior":{"interactive":true,"navigable":true},
+  "source":"../../examples/home-example.ts"
+}

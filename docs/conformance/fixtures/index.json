@@ -1,0 +1,20 @@
+{
+  "$schema": "../fixture-index.schema.json",
+  "id": "SES-002",
+  "title": "SES Conformance Fixture Index",
+  "version": "1.0.0-draft",
+  "sourceBaseline": "../ses-001-matrix.json",
+  "expectations": {
+    "positive": "Every positive fixture preserves the listed semantic identities and operations while permitting only declared expression mutations.",
+    "negative": "Every negative fixture fails at the declared layer with the declared error code and failure condition.",
+    "schema": "Every fixture record validates against ../fixture.schema.json."
+  },
+  "files": [
+    "positive-home.json",
+    "negative.json"
+  ],
+  "counts": {
+    "positive": 4,
+    "negative": 12
+  }
+}

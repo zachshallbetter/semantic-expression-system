@@ -1,0 +1,11 @@
+{
+  "id": "SES-036-EV-001",
+  "issue": "SES-036",
+  "claim": "Expression inputs are constrained to data-only values with safe resource schemes and namespaced custom sources.",
+  "source": ["tools/security_validation.py", "docs/conformance/security-fixtures.json", "docs/21-security-trust-boundaries.md"],
+  "method": ["local valid trust-boundary validation", "typed unsafe-input validation"],
+  "result": "pass",
+  "observations": ["fixture sources pass", "executable key is rejected", "javascript and filesystem sources are rejected", "unnamespaced custom source is rejected"],
+  "limitations": ["No network request, asset decoding, capability probe, or sandbox execution is performed"],
+  "authority": "coordinator.local"
+}

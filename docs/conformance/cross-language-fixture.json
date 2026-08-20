@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "id": "SES-039-cross-language-fixture",
+  "implementationLanguages": ["python", "javascript"],
+  "source": "expression-equivalence-fixtures.json",
+  "requiredComparisons": ["semantic identity", "operation identity", "Visual Language set"],
+  "mutationCases": ["target mutation rejected", "operation mutation detected"],
+  "qualification": "local cross-language summary and mutation check"
+}

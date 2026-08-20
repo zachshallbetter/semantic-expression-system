@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "id": "SES-030-expression-equivalence-fixtures",
+  "semantic": {
+    "block": "media-card",
+    "slots": ["media", "title", "subtitle", "meta", "action"],
+    "operations": ["open-media"]
+  },
+  "expressions": [
+    {"target": "media-card", "visualLanguage": "core", "morphology": {"orientation": "vertical", "density": "comfortable"}, "projection": {"preserve": ["identity", "operation-identity"], "transform": ["orientation", "density"]}},
+    {"target": "media-card", "visualLanguage": "neo-edo", "morphology": {"orientation": "asymmetric", "density": "compact"}, "projection": {"preserve": ["identity", "operation-identity"], "transform": ["orientation", "density", "texture", "ornament"]}},
+    {"target": "media-card", "visualLanguage": "western-comics", "morphology": {"orientation": "horizontal", "density": "dense"}, "projection": {"preserve": ["identity", "operation-identity"], "transform": ["orientation", "density", "edges", "pattern"]}
+    }
+  ]
+}

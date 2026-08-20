@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "id": "SES-036-security-fixtures",
+  "valid": {
+    "visualLanguage": "neo-edo",
+    "source": "fixture:appearance-neo-edo",
+    "assets": [{"id": "washi-fiber", "source": "fixture:washi-fiber"}],
+    "customSource": "custom:vendor:ornament"
+  },
+  "invalid": [
+    {"expression": {"script": "alert(1)"}, "expectedCode": "ERR_EXECUTABLE_EXPRESSION_INPUT"},
+    {"expression": {"source": "javascript:alert(1)"}, "expectedCode": "ERR_ASSET_SOURCE_UNSAFE"},
+    {"expression": {"source": "/tmp/asset.svg"}, "expectedCode": "ERR_ASSET_SOURCE_UNSAFE"},
+    {"expression": {"customSource": "vendor-ornament"}, "expectedCode": "ERR_CUSTOM_SOURCE_UNNAMESPACED"}
+  ]
+}

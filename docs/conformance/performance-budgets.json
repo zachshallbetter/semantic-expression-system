@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "id": "SES-017",
+  "title": "SES Performance Budgets",
+  "status": "Provisional Contract",
+  "profile": "warm-local-resolution",
+  "budgets": {
+    "resolutionP95Ms": 5,
+    "tokenLookupP95Ms": 1,
+    "assetMetadataP95Ms": 2,
+    "recipeLayerCount": 12,
+    "recipeMergeDepth": 16,
+    "appearanceLayerCount": 32,
+    "responsiveRecomputeP95Ms": 8,
+    "motionMetadataP95Ms": 1,
+    "outputSizeKiB": 256
+  },
+  "excludedFromPureResolver": ["resource-fetch","resource-decode","host-layout","host-paint","motion-playback"],
+  "measurementPercentiles": ["p50","p95","p99"],
+  "failureCodes": ["ERR_RESOLUTION_BUDGET_EXCEEDED","ERR_TOKEN_LOOKUP_BUDGET_EXCEEDED","ERR_ASSET_METADATA_BUDGET_EXCEEDED","ERR_RECIPE_DEPTH_EXCEEDED","ERR_APPEARANCE_LAYER_BUDGET_EXCEEDED","ERR_RESPONSIVE_RECOMPUTE_BUDGET_EXCEEDED","ERR_OUTPUT_SIZE_BUDGET_EXCEEDED"]
+}

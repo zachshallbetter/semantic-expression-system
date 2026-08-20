@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "id": "fixture-home-semantic",
+  "kind": "composition",
+  "composition": "home",
+  "sockets": [
+    {"id":"home.hero","accepts":["hero"],"multiplicity":"single","importance":"primary","required":true,"preserve":["identity","primary-action","accessibility-order"]},
+    {"id":"home.trending","accepts":["media-rail","media-grid","ranked-collection"],"multiplicity":"single","importance":"primary","required":true,"preserve":["content-identity","content-priority","view-all-operation"]}
+  ],
+  "operations": ["enter-world","open-media","view-all"],
+  "invariance": {"semantic":"required","behavioral":"required","actionIdentity":"required","structural":"bounded","morphological":"free","visual":"free"},
+  "source": "../../examples/home-example.ts"
+}

@@ -1,0 +1,11 @@
+{
+  "id": "SES-018-EV-001",
+  "issue": "SES-018",
+  "claim": "SES defines canonical authoring ownership and routing rules for semantic, expression, resolver, host, and external protocol concerns.",
+  "source": ["docs/23-authoring-boundaries.md", "docs/conformance/authoring-boundaries.json", "docs/01-definition.md", "docs/03-expression-model.md", "docs/08-implementation-boundary.md"],
+  "method": ["ownership-matrix review", "authority-routing review", "scope-boundary review"],
+  "result": "partial",
+  "findings": {"authoringSurfacesDefined": 14, "routingRulesDefined": 6, "conflictRuleDefined": true, "repositoryReorganizationPerformed": false},
+  "limitations": ["No implementation repository was reorganized; the contract remains architecture guidance."],
+  "authority": "coordinator.local"
+}

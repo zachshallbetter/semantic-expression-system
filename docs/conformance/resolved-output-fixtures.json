@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "id": "SES-022-resolved-output-fixtures",
+  "status": "canonical",
+  "source": {
+    "semantic": "reference-pack/media-card.json",
+    "expression": "reference-pack/appearance-neo-edo.json",
+    "context": {"viewport": "wide"}
+  },
+  "requiredSections": [
+    "identity",
+    "semantic",
+    "projection",
+    "expression",
+    "resources",
+    "interaction",
+    "accessibility",
+    "responsive",
+    "trace",
+    "diagnostics"
+  ],
+  "expectations": {
+    "identity.composition": "media-card",
+    "identity.target": "media-card",
+    "semantic.operations": ["open-media"],
+    "projection.preserve": ["identity", "operation-identity", "accessibility-order"],
+    "projection.transform": [
+      "orientation",
+      "media-placement",
+      "enclosure",
+      "background",
+      "edges",
+      "texture",
+      "pattern",
+      "ornament"
+    ],
+    "expression.visualLanguage": "neo-edo",
+    "expression.morphology.rhythm": "asymmetric",
+    "expression.appearance.background[0].token": "surface.washi",
+    "interaction.operations": ["open-media"],
+    "accessibility.required": true,
+    "responsive.context.viewport": "wide",
+    "trace.layers": ["Visual Language", "Theme", "Recipe"],
+    "diagnostics.warnings": [],
+    "diagnostics.failures": []
+  },
+  "forbiddenHostFields": [
+    "dom",
+    "css",
+    "reactComponent",
+    "nativeClass",
+    "canvasPrimitive",
+    "eventHandler"
+  ]
+}

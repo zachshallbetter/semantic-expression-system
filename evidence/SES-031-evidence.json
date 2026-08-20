@@ -1,0 +1,11 @@
+{
+  "id": "SES-031-EV-001",
+  "issue": "SES-031",
+  "claim": "Required operation exposure and stable event routing are preserved without moving invocation side effects into SES.",
+  "source": ["tools/operation_routing.py", "docs/conformance/operation-routing-fixtures.json", "docs/19-renderer-neutral-output.md"],
+  "method": ["local exposure validation", "local event routing"],
+  "result": "pass",
+  "observations": ["open-media is exposed and signaled", "event identity and payload are preserved", "route is explicitly host-owned"],
+  "limitations": ["No host callback, network request, authorization, or operation side effect is executed"],
+  "authority": "coordinator.local"
+}

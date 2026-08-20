@@ -1,0 +1,21 @@
+{
+  "id": "SES-024-EV-001",
+  "issue": "SES-024",
+  "claim": "The canonical negative fixture set executes into typed expected-failure records without discarding negative evidence.",
+  "source": [
+    "tools/execute_negative_fixtures.py",
+    "docs/conformance/fixtures/negative.json",
+    "docs/10-validator-contract.md"
+  ],
+  "method": ["local negative-fixture execution"],
+  "result": "pass",
+  "observations": [
+    "12 negative fixtures were executed",
+    "12 typed failure diagnostics were retained",
+    "fixture IDs, baselines, layers, and failure conditions were preserved"
+  ],
+  "limitations": [
+    "This phase executes declarative expected-failure records; semantic runtime mutation is not yet evaluated"
+  ],
+  "authority": "coordinator.local"
+}
