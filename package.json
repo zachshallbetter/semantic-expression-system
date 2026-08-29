@@ -1,0 +1,15 @@
+{
+  "name": "semantic-expression-system",
+  "version": "1.0.0",
+  "description": "Semantic Expression System (SES): protocol-neutral separation of interface meaning from interface expression. This package exposes the normative schemas and TypeScript types; the specification and conformance corpus live in docs/.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "files": ["docs/schemas/", "docs/SES-SPECIFICATION.md", "LICENSE", "README.md"],
+  "exports": {
+    ".": { "types": "./docs/schemas/ses-schema.ts" },
+    "./schema.json": "./docs/schemas/ses.schema.json",
+    "./schema.ts": "./docs/schemas/ses-schema.ts"
+  },
+  "keywords": ["semantic", "expression", "projection-contract", "design-system", "specification"],
+  "private": false
+}
