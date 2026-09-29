@@ -1,0 +1,69 @@
+{
+  "$schema": "https://iepe.dev/schema/agent-package-source.schema.json",
+  "adapters": [],
+  "exclusions": [
+    ".git",
+    "__MACOSX",
+    "__pycache__",
+    "*.pyc",
+    "undeclared files"
+  ],
+  "manifestSchema": "https://iepe.dev/schema/agent-package-manifest.schema.json",
+  "operatingContract": "AGENTS.md",
+  "packageId": "ses.agent-package",
+  "packageVersion": "1.0.0",
+  "projectRoot": "..",
+  "protocol": {
+    "protocolId": "IEPE-001",
+    "protocolVersion": "0.2.0",
+    "revision": "56f82de8cca122cc4d347cdd55bb32bdcd31ed27",
+    "source": "https://github.com/zachshallbetter/IEPE"
+  },
+  "releaseClass": "release",
+  "skills": [
+    "iepe-core:initialize-iepe-project@56f82de8cca122cc4d347cdd55bb32bdcd31ed27",
+    "iepe-core:maintain-iepe-package@56f82de8cca122cc4d347cdd55bb32bdcd31ed27",
+    "iepe-core:operate-iepe-project@56f82de8cca122cc4d347cdd55bb32bdcd31ed27",
+    "iepe-core:qualify-iepe-outcome@56f82de8cca122cc4d347cdd55bb32bdcd31ed27",
+    "iepe-core:reconcile-iepe-project@56f82de8cca122cc4d347cdd55bb32bdcd31ed27",
+    "iepe-core:stress-test-iepe-candidate@56f82de8cca122cc4d347cdd55bb32bdcd31ed27"
+  ],
+  "sourceState": "release",
+  "sources": [
+    {
+      "authorityRank": 1,
+      "path": ".iepe/protocol-reference.json",
+      "role": "doctrine"
+    },
+    {
+      "authorityRank": 2,
+      "path": "INTENT.md",
+      "role": "intent"
+    },
+    {
+      "authorityRank": 3,
+      "path": "docs/EXPERIENCE.md",
+      "role": "doctrine"
+    },
+    {
+      "authorityRank": 4,
+      "path": "docs/ARCHITECTURE.md",
+      "role": "doctrine"
+    },
+    {
+      "authorityRank": 5,
+      "path": "PROJECT_PROFILE.json",
+      "role": "operations"
+    },
+    {
+      "authorityRank": 6,
+      "path": "AGENTS.md",
+      "role": "operations"
+    },
+    {
+      "authorityRank": 7,
+      "path": "ROADMAP.md",
+      "role": "operations"
+    }
+  ]
+}
