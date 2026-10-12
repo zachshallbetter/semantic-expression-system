@@ -1,6 +1,8 @@
-# SES (Semantic Expression System)
+# Semantic Expression System
 
-[![License](https.img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE)
+**SES** is the short name for this project.
+
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE)
 [![Protocol](https://img.shields.io/badge/Protocol-IEPE--001_Conforming-green.svg)](./PROJECT_PROFILE.json)
 [![Specification](https://img.shields.io/badge/Specification-v1.0.0_Release-orange.svg)](./docs/SES-SPECIFICATION.md)
 
@@ -285,3 +287,16 @@ Semantic-Expression-System/
 
 > **SES is a semantic interface representation and expression architecture for defining reusable interface meaning independently from graphical realization.**  
 > It provides typed semantic structures, projection contracts, replaceable visual grammars, and deterministic expression rules so multiple radically different interface realizations can share the same underlying application semantics and behavior.
+
+---
+
+## Citation
+
+> Shallbetter, Z. (2026). *Semantic Expression System* (Version 1.0.0) [Computer software].
+> https://github.com/zachshallbetter/Semantic-Expression-System
+
+Machine-readable metadata: [`CITATION.cff`](CITATION.cff).
+
+## License
+
+Apache License 2.0. See [`LICENSE`](LICENSE).

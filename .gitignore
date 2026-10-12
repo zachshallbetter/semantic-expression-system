@@ -26,3 +26,9 @@ build/
 .vscode/
 *.swp
 *.swo
+
+# Generated corpora (regenerable)
+.agents/llms*.txt
+llms*.txt
+.env
+.env.*

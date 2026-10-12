@@ -1,0 +1,56 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Semantic Expression System"
+abstract: >-
+  A protocol-neutral architecture for separating interface meaning from interface
+  expression. A single stable semantic interface definition can produce radically
+  different rendered interfaces without duplicating application logic or fragmenting
+  component behavior. This repository includes the specification, schemas, TypeScript
+  types, conformance corpus, and evidence records.
+type: software
+authors:
+  - family-names: Shallbetter
+    given-names: Zachary
+    orcid: "https://orcid.org/0009-0009-9450-3429"
+version: "1.0.0"
+date-released: "2026-10-12"
+license: Apache-2.0
+repository-code: "https://github.com/zachshallbetter/Semantic-Expression-System"
+url: "https://github.com/zachshallbetter/Semantic-Expression-System"
+keywords:
+  - semantic expression
+  - projection contract
+  - interface architecture
+  - design systems
+  - semantic model
+  - visual language
+  - protocol
+# doi: 10.5281/zenodo.XXXXXXXX
+
+references:
+  - type: dataset
+    title: "Foundations of Computational Interaction"
+    authors:
+      - family-names: Shallbetter
+        given-names: Zachary
+        orcid: "https://orcid.org/0009-0009-9450-3429"
+    version: "0.5.1"
+    doi: "10.5281/zenodo.23290487"
+    url: "https://doi.org/10.5281/zenodo.23290488"
+  - type: software
+    title: "Fundamental"
+    authors:
+      - family-names: Shallbetter
+        given-names: Zachary
+        orcid: "https://orcid.org/0009-0009-9450-3429"
+    version: "0.11.0"
+    doi: "10.5281/zenodo.20989937"
+    url: "https://doi.org/10.5281/zenodo.20989937"
+  - type: software
+    title: "Intent and Evidence Project Engine"
+    authors:
+      - family-names: Shallbetter
+        given-names: Zachary
+        orcid: "https://orcid.org/0009-0009-9450-3429"
+    version: "0.2.1"
+    url: "https://github.com/zachshallbetter/IEPE"
