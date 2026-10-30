@@ -1,9 +1,14 @@
+# Changelog
+
+## 1.0.2 Release
+
+- Correct related-work DOI and version metadata against the exact Zenodo version records.
+- Bump release metadata for this citation correction.
+
 ## 1.0.1 Release
 
 - Correct the conformance matrix link to a repository-relative path.
 - Align package and archival metadata with this release.
-
-# Changelog
 
 ## 1.0.0 Draft Standard
 

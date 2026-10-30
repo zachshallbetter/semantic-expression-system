@@ -12,8 +12,8 @@ authors:
   - family-names: Shallbetter
     given-names: Zachary
     orcid: "https://orcid.org/0009-0009-9450-3429"
-version: "1.0.1"
-date-released: "2026-10-12"
+version: "1.0.2"
+date-released: "2026-10-30"
 license: Apache-2.0
 repository-code: "https://github.com/zachshallbetter/Semantic-Expression-System"
 url: "https://github.com/zachshallbetter/Semantic-Expression-System"
@@ -34,18 +34,18 @@ references:
       - family-names: Shallbetter
         given-names: Zachary
         orcid: "https://orcid.org/0009-0009-9450-3429"
-    version: "0.5.1"
-    doi: "10.5281/zenodo.23290487"
-    url: "https://doi.org/10.5281/zenodo.23290488"
+    version: "0.5.3"
+    doi: "10.5281/zenodo.23798208"
+    url: "https://doi.org/10.5281/zenodo.23798208"
   - type: software
     title: "Fundamental"
     authors:
       - family-names: Shallbetter
         given-names: Zachary
         orcid: "https://orcid.org/0009-0009-9450-3429"
-    version: "0.11.0"
-    doi: "10.5281/zenodo.20989937"
-    url: "https://doi.org/10.5281/zenodo.20989937"
+    version: "0.11.1"
+    doi: "10.5281/zenodo.23384281"
+    url: "https://doi.org/10.5281/zenodo.23384281"
   - type: software
     title: "Intent and Evidence Project Engine"
     authors:

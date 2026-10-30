@@ -1,8 +1,8 @@
 {
   "title": "Semantic Expression System",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "upload_type": "software",
-  "description": "Semantic Expression System (SES) version 1.0.0: a protocol-neutral architecture for separating interface meaning from interface expression, including specification, schemas, TypeScript types, and conformance corpus.",
+  "description": "Semantic Expression System (SES) version 1.0.2: a protocol-neutral architecture for separating interface meaning from interface expression, including specification, schemas, TypeScript types, and conformance corpus.",
   "creators": [
     {
       "name": "Shallbetter, Zachary",
@@ -23,17 +23,17 @@
   "language": "eng",
   "related_identifiers": [
     {
-      "identifier": "https://github.com/zachshallbetter/Semantic-Expression-System/tree/v1.0.1",
+      "identifier": "https://github.com/zachshallbetter/Semantic-Expression-System/tree/v1.0.2",
       "relation": "isSupplementTo",
       "resource_type": "software"
     },
     {
-      "identifier": "https://doi.org/10.5281/zenodo.23290488",
+      "identifier": "https://doi.org/10.5281/zenodo.23798208",
       "relation": "isSupplementTo",
       "resource_type": "dataset"
     },
     {
-      "identifier": "https://doi.org/10.5281/zenodo.20989937",
+      "identifier": "https://doi.org/10.5281/zenodo.23384281",
       "relation": "isSupplementTo",
       "resource_type": "software"
     }
