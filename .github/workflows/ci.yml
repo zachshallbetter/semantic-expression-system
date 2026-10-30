@@ -29,7 +29,17 @@ jobs:
         run: |
           for f in tools/*.py; do
             echo "=== Running $f ==="
-            python3 "$f" || exit 1
+            case "$f" in
+              tools/resolve_reference_fixture.py)
+                continue
+                ;;
+              tools/validate_resolved_output.py)
+                python3 tools/resolve_reference_fixture.py | python3 "$f" || exit 1
+                ;;
+              *)
+                python3 "$f" || exit 1
+                ;;
+            esac
           done
 
       - name: Verify Context Corpus Exporter

@@ -1,12 +1,30 @@
 # Semantic Expression System
 
+**Identifier:** `ses`  
+**Version:** `1.0.1`  
+**Status:** `Release`  
+**Date:** `2026-10-20`  
+**Scope:** Separation of fixed meaning from variable expression.
+
+## Question
+
+How can meaning stay fixed while expression changes completely?
+
+## Non-goals / Refusals
+
+- Bind interface meaning to any one rendering.
+
+---
+
+# Semantic Expression System
+
 **SES** is the short name for this project.
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE)
 [![Protocol](https://img.shields.io/badge/Protocol-IEPE--001_Conforming-green.svg)](./PROJECT_PROFILE.json)
-[![Specification](https://img.shields.io/badge/Specification-v1.0.0_Release-orange.svg)](./docs/SES-SPECIFICATION.md)
+[![Specification](https://img.shields.io/badge/Specification-v1.0.1_Release-orange.svg)](./docs/SES-SPECIFICATION.md)
 
-> **Version:** 1.0.0 Release Standard  
+> **Version:** 1.0.1 Release Standard  
 > **Status:** Protocol-Neutral Architecture Specification + Qualified Implementation Candidate  
 > **Target:** 2D Interface Architecture for Radical Visual Expression  
 
@@ -292,7 +310,7 @@ Semantic-Expression-System/
 
 ## Citation
 
-> Shallbetter, Z. (2026). *Semantic Expression System* (Version 1.0.0) [Computer software].
+> Shallbetter, Z. (2026). *Semantic Expression System* (Version 1.0.1) [Computer software].
 > https://github.com/zachshallbetter/Semantic-Expression-System
 
 Machine-readable metadata: [`CITATION.cff`](CITATION.cff).

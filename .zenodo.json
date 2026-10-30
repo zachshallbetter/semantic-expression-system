@@ -1,6 +1,6 @@
 {
   "title": "Semantic Expression System",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "upload_type": "software",
   "description": "Semantic Expression System (SES) version 1.0.0: a protocol-neutral architecture for separating interface meaning from interface expression, including specification, schemas, TypeScript types, and conformance corpus.",
   "creators": [
@@ -20,9 +20,10 @@
   ],
   "license": "Apache-2.0",
   "access_right": "open",
+  "language": "eng",
   "related_identifiers": [
     {
-      "identifier": "https://github.com/zachshallbetter/Semantic-Expression-System/tree/v1.0.0",
+      "identifier": "https://github.com/zachshallbetter/Semantic-Expression-System/tree/v1.0.1",
       "relation": "isSupplementTo",
       "resource_type": "software"
     },

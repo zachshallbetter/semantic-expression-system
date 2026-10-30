@@ -96,4 +96,4 @@ The traceable invariant matrix, fixture inventory, validation order, and scope b
 ## 7.4 Canonical Matrix Artifact
 
 The active invariant baseline and negative fixture plan is tracked in the repository artifact:
-- [`docs/conformance/ses-001-matrix.json`](file://$HOME/Projects/Semantic-Expression-System/docs/conformance/ses-001-matrix.json)
+- [`docs/conformance/ses-001-matrix.json`](conformance/ses-001-matrix.json)

@@ -1,3 +1,8 @@
+## 1.0.1 Release
+
+- Correct the conformance matrix link to a repository-relative path.
+- Align package and archival metadata with this release.
+
 # Changelog
 
 ## 1.0.0 Draft Standard
