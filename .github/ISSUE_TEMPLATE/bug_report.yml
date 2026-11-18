@@ -1,0 +1,48 @@
+name: Bug report
+description: The specification, a schema, a fixture or a validation tool is wrong or inconsistent.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: >
+        Thanks for the report. A pointer to the exact section, schema field or fixture is the fastest path to a fix.
+        Report a security problem privately, see SECURITY.md.
+  - type: input
+    id: version
+    attributes:
+      label: SES version
+      description: The release tag, or `version` in package.json.
+      placeholder: SES 1.0.2
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Where
+      description: The document and section, schema (`docs/schemas/`), fixture or tool (`tools/`).
+      placeholder: docs/05-projection-contract.md, or tools/projection_enforcement.py
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+      description: What the specification says or implies should happen.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction
+      description: The command, fixture or schema snippet that shows it.
+  - type: input
+    id: env
+    attributes:
+      label: Environment
+      placeholder: Python version, Node version, OS (for a tool problem)

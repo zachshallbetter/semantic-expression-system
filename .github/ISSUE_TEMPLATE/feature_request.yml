@@ -1,0 +1,25 @@
+name: Feature request
+description: Propose a change to the specification, the schemas or the conformance corpus.
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: >
+        Normative changes go through the specification and schemas together (see CONTRIBUTING.md). Describe the
+        expression or semantic need first; SES keeps meaning fixed and lets expression vary.
+  - type: textarea
+    id: problem
+    attributes:
+      label: The need
+      description: What can't be expressed or checked today, and for whom?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: How you imagine it
+      description: A schema field, a section, a conformance fixture, a tool.
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
