@@ -308,6 +308,33 @@ Semantic-Expression-System/
 
 ---
 
+## Verification
+
+CI runs every tool in [`tools/`](./tools) on pull requests and on pushes to `main`. To run the same checks locally:
+
+```sh
+for f in tools/*.py; do
+  case "$f" in
+    tools/resolve_reference_fixture.py) continue ;;
+    tools/validate_resolved_output.py) python3 tools/resolve_reference_fixture.py | python3 "$f" || exit 1 ;;
+    *) python3 "$f" || exit 1 ;;
+  esac
+done
+```
+
+These are structural and conformance checks over the schemas, the reference fixtures and the negative fixtures:
+local resolver, validator and host-adapter checks, not an empirical evaluation. The distinction between documented,
+implemented, tested and empirically validated is kept throughout; see [`docs/07-conformance.md`](./docs/07-conformance.md).
+
+## Status and limitations
+
+SES v1.0.2 is released as a protocol-neutral specification with a qualified implementation candidate. It has not been
+empirically validated in production or through an independent browser and assistive-technology evaluation, and the
+local checks do not establish production readiness or universal cross-framework behavior; see
+[`docs/NEGATIVE_RESULTS.md`](./docs/NEGATIVE_RESULTS.md) and
+[`docs/25-accountability-and-readiness.md`](./docs/25-accountability-and-readiness.md). Changes by release are in the
+[changelog](./docs/CHANGELOG.md).
+
 ## Citation
 
 > Shallbetter, Z. (2026). *Semantic Expression System* (Version 1.0.2) [Computer software].
