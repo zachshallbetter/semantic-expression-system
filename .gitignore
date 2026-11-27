@@ -32,3 +32,9 @@ build/
 llms*.txt
 .env
 .env.*
+
+# A global core.excludesFile commonly ignores agent contracts. README.md and PROJECT_PROFILE.json both link AGENTS.md,
+# and the protocols register requires it, so this file opts it back in.
+!AGENTS.md
+!.agents/
+!.agents/AGENTS.md
